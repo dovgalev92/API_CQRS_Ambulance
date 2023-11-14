@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Ambulance_API_CQRS.Domain/1.0.0": {
+        "runtime": {
+          "Ambulance_API_CQRS.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Ambulance_API_CQRS.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
