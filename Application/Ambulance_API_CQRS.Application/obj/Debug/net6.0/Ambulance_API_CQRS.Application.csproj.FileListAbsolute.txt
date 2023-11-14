@@ -1,0 +1,15 @@
+C:\Users\Admin\ProjectFilles\Проект скорой помощи\Application\Ambulance_API_CQRS.Application\bin\Debug\net6.0\Ambulance_API_CQRS.Application.deps.json
+C:\Users\Admin\ProjectFilles\Проект скорой помощи\Application\Ambulance_API_CQRS.Application\bin\Debug\net6.0\Ambulance_API_CQRS.Application.dll
+C:\Users\Admin\ProjectFilles\Проект скорой помощи\Application\Ambulance_API_CQRS.Application\bin\Debug\net6.0\Ambulance_API_CQRS.Application.pdb
+C:\Users\Admin\ProjectFilles\Проект скорой помощи\Application\Ambulance_API_CQRS.Application\bin\Debug\net6.0\Ambulance_API_CQRS.Domain.dll
+C:\Users\Admin\ProjectFilles\Проект скорой помощи\Application\Ambulance_API_CQRS.Application\bin\Debug\net6.0\Ambulance_API_CQRS.Domain.pdb
+C:\Users\Admin\ProjectFilles\Проект скорой помощи\Application\Ambulance_API_CQRS.Application\obj\Debug\net6.0\Ambulance_API_CQRS.Application.csproj.AssemblyReference.cache
+C:\Users\Admin\ProjectFilles\Проект скорой помощи\Application\Ambulance_API_CQRS.Application\obj\Debug\net6.0\Ambulance_API_CQRS.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\ProjectFilles\Проект скорой помощи\Application\Ambulance_API_CQRS.Application\obj\Debug\net6.0\Ambulance_API_CQRS.Application.AssemblyInfoInputs.cache
+C:\Users\Admin\ProjectFilles\Проект скорой помощи\Application\Ambulance_API_CQRS.Application\obj\Debug\net6.0\Ambulance_API_CQRS.Application.AssemblyInfo.cs
+C:\Users\Admin\ProjectFilles\Проект скорой помощи\Application\Ambulance_API_CQRS.Application\obj\Debug\net6.0\Ambulance_API_CQRS.Application.csproj.CoreCompileInputs.cache
+C:\Users\Admin\ProjectFilles\Проект скорой помощи\Application\Ambulance_API_CQRS.Application\obj\Debug\net6.0\Ambulance_API_CQRS.Application.csproj.CopyComplete
+C:\Users\Admin\ProjectFilles\Проект скорой помощи\Application\Ambulance_API_CQRS.Application\obj\Debug\net6.0\Ambulance_API_CQRS.Application.dll
+C:\Users\Admin\ProjectFilles\Проект скорой помощи\Application\Ambulance_API_CQRS.Application\obj\Debug\net6.0\refint\Ambulance_API_CQRS.Application.dll
+C:\Users\Admin\ProjectFilles\Проект скорой помощи\Application\Ambulance_API_CQRS.Application\obj\Debug\net6.0\Ambulance_API_CQRS.Application.pdb
+C:\Users\Admin\ProjectFilles\Проект скорой помощи\Application\Ambulance_API_CQRS.Application\obj\Debug\net6.0\ref\Ambulance_API_CQRS.Application.dll
