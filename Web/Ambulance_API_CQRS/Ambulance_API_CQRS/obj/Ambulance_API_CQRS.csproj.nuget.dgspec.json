@@ -44,6 +44,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.2.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[6.0.25, )"
@@ -223,6 +231,9 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
+              "C:\\Users\\Admin\\ProjectFilles\\Проект скорой помощи\\Application\\Ambulance_API_CQRS.Application\\Ambulance_API_CQRS.Application.csproj": {
+                "projectPath": "C:\\Users\\Admin\\ProjectFilles\\Проект скорой помощи\\Application\\Ambulance_API_CQRS.Application\\Ambulance_API_CQRS.Application.csproj"
+              },
               "C:\\Users\\Admin\\ProjectFilles\\Проект скорой помощи\\Infrastructure\\Ambulance_API_CQRS.Infrastructure\\Ambulance_API_CQRS.Infrastructure.csproj": {
                 "projectPath": "C:\\Users\\Admin\\ProjectFilles\\Проект скорой помощи\\Infrastructure\\Ambulance_API_CQRS.Infrastructure\\Ambulance_API_CQRS.Infrastructure.csproj"
               }
@@ -239,6 +250,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",

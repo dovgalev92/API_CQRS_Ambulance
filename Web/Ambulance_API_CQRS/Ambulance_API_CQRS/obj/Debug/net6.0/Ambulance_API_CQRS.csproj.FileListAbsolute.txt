@@ -72,3 +72,8 @@ C:\Users\Admin\ProjectFilles\Проект скорой помощи\Web\Ambulanc
 C:\Users\Admin\ProjectFilles\Проект скорой помощи\Web\Ambulance_API_CQRS\Ambulance_API_CQRS\obj\Debug\net6.0\Ambulance_API_CQRS.pdb
 C:\Users\Admin\ProjectFilles\Проект скорой помощи\Web\Ambulance_API_CQRS\Ambulance_API_CQRS\obj\Debug\net6.0\Ambulance_API_CQRS.genruntimeconfig.cache
 C:\Users\Admin\ProjectFilles\Проект скорой помощи\Web\Ambulance_API_CQRS\Ambulance_API_CQRS\obj\Debug\net6.0\ref\Ambulance_API_CQRS.dll
+C:\Users\Admin\ProjectFilles\Проект скорой помощи\Web\Ambulance_API_CQRS\Ambulance_API_CQRS\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\Admin\ProjectFilles\Проект скорой помощи\Web\Ambulance_API_CQRS\Ambulance_API_CQRS\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\Admin\ProjectFilles\Проект скорой помощи\Web\Ambulance_API_CQRS\Ambulance_API_CQRS\bin\Debug\net6.0\MediatR.dll
+C:\Users\Admin\ProjectFilles\Проект скорой помощи\Web\Ambulance_API_CQRS\Ambulance_API_CQRS\bin\Debug\net6.0\MediatR.Contracts.dll
+C:\Users\Admin\ProjectFilles\Проект скорой помощи\Web\Ambulance_API_CQRS\Ambulance_API_CQRS\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
