@@ -12,8 +12,8 @@ namespace Ambulance_API_CQRS.Application.Common.Interfaces.IMapp
         }
         private void ApplyMappingAssembly(Assembly assembly)
         {
-            var types = assembly.GetExportedTypes() // получаем открытые типы опред-ые в этой сборке и видимые за ее пределами
-                .Where(type => type.GetInterfaces() // получаем весь список интерефейсов классов
+            var types = assembly.GetExportedTypes()  
+                .Where(type => type.GetInterfaces() 
                 .Any(i => i.IsGenericType && 
                 i.GetGenericTypeDefinition() == typeof(IMapping<>)))
                 .ToList();

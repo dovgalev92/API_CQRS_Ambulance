@@ -17,18 +17,13 @@ namespace Ambulance_API_CQRS.Application.Patients.Command.CreatePatient
 
         public async Task<int> Handle(CreatePatientCommand request, CancellationToken cancellation)
         {
-            var queryId = await _application.Callings.
-                FirstOrDefaultAsync(x => x.Id == request.CallingAmbulanceId) != null ? request.CallingAmbulanceId 
-                : throw new ArgumentNullException(nameof(request.CallingAmbulanceId)); 
-
             var patient = new Patient
             {
                 FamilyName = request.FamilyName,
                 Name = request.Name,
                 Patronymic = request.Patronymic,
                 Age = request.Age,
-                BirthYear = request.BirthYear,
-                CallingAmbulanceId = queryId
+                BirthYear = request.BirthYear 
             };
             
             await _repos.CreatePatient(patient);
