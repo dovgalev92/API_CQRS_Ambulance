@@ -13,20 +13,21 @@ namespace Ambulance_API_CQRS.Domain.Entities
         /// </summary>
         public DateTime DateCall { get; set; }
         /// <summary>
-        /// время вызова
+        /// Время вызова
         /// </summary>
         public TimeSpan TimeCall { get; set; }
         /// <summary>
-        /// причина вызова
+        /// Причина вызова
         /// </summary>
         public string CauseCall { get; set; }
         /// <summary>
-        /// переадресация вызова в другую организацию 
+        /// Переадресация вызова в другую организацию 
         /// </summary>
         public string? RedirectCall { get; set; }
 
         //связи
         public Patient Patient { get; set; }
-        public AmbulanceDepart Departure { get; set; }
+        public int PatientId { get; set; }
+        public AmbulanceDepart? Departure { get; set; }
     }
 }
