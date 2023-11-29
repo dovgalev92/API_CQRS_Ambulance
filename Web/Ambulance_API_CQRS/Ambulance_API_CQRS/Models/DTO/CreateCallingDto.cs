@@ -2,6 +2,7 @@
 using Ambulance_API_CQRS.Application.Calling.Command.CreateCalling;
 using AutoMapper;
 using System.ComponentModel.DataAnnotations;
+using Ambulance_API_CQRS.Domain.Entities;
 
 namespace Ambulance_API_CQRS.Models.DTO
 {
@@ -13,7 +14,8 @@ namespace Ambulance_API_CQRS.Models.DTO
         public TimeSpan TimeCall { get; set; }
         public string CauseCall { get; set; }
         public string? RedirectCall { get; set; }
-        public int CallingAmbulanceId { get; set; }
+        public int? PatientId { get; set; }
+
 
         public void Mapping(Profile profile)
             => profile.CreateMap<CreateCallingDto, CreateCallingCommand>();

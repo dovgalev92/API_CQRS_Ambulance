@@ -12,7 +12,6 @@ namespace Ambulance_API_CQRS.Models.DTO.PatientDTO
         public string Patronymic { get; set; }
         public int Age { get; set; }
         public DateTime BirthYear { get; set; }
-        public int CallingAmbulanceId { get; set; }
 
         public void Mapping(Profile profile)
             => profile.CreateMap<CreatePatientDto, CreatePatientCommand>();

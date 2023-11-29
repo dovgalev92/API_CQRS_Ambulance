@@ -12,11 +12,10 @@ namespace Ambulance_API_CQRS.Controllers
         private readonly IMapper _mapper;
         public PatientController(IMapper mapper) => _mapper = mapper;
 
-        [HttpPost("{id}")]
+        [HttpPost]
         [ProducesResponseType(StatusCodes.Status201Created)]
-        public async Task<ActionResult<int>> Create(int id, [FromBody] CreatePatientDto create)
+        public async Task<ActionResult<int>> Create([FromBody] CreatePatientDto create)
         {
-            create.CallingAmbulanceId = id; // продумать альтернативу. Код следует доработать
             var map = _mapper.Map<CreatePatientCommand>(create);
             var patientId = await Mediator.Send(map);
 
