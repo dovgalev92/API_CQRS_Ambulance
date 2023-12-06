@@ -21,7 +21,7 @@ namespace Ambulance_API_CQRS.Domain.Entities
         public DateTime BirthYear { get; set; }
 
         // связи
-        public CallingAmbulance CallingAmbulance { get; set; }
+        public ICollection<CallingAmbulance> CallingAmbulance { get; set; }
         public Street? Street { get; set; }
         public Nullable<int> StreetId { get; set; }
         public Locality? Locality { get; set; }
