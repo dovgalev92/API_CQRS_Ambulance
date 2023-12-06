@@ -22,17 +22,15 @@ namespace Ambulance_API_CQRS.Application.Calling.Command.CreateCalling
                 .FirstOrDefaultAsync(x => x.Id == request.PatientId) != null ? request.PatientId 
                 : throw new ArgumentNullException(nameof(request.PatientId));
 
-            var newCalling = new CallingAmbulance
+            await _repository.CreateCalling(new CallingAmbulance
             {
                 NameOfCAllAmbulance = request.NameOfCAllAmbulance,
                 DateCall = DateTime.Now.Date,
                 TimeCall = new TimeSpan(DateTime.Now.Hour, DateTime.Now.Minute, DateTime.Now.Second),
                 CauseCall = request.CauseCall,
                 RedirectCall = request.RedirectCall,
-                PatientId = queryId
-                
-            };
-            await _repository.CreateCalling(newCalling);
+                PatientId = request.PatientId
+            });
             await _application.SaveChangesAsync(cancellationToken);
         }
     }

@@ -1,11 +1,10 @@
-﻿using Ambulance_API_CQRS.Domain.Entities;
-using Ambulance_API_CQRS.Domain.Entities.Base;
+﻿
 using MediatR;
 using System.ComponentModel.DataAnnotations;
 
 namespace Ambulance_API_CQRS.Application.Calling.Command.CreateCalling
 {
-    public class CreateCallingCommand : BaseEntity, IRequest
+    public record CreateCallingCommand : IRequest
     {
         public string NameOfCAllAmbulance { get; set; }
         [DataType(DataType.Date)]
