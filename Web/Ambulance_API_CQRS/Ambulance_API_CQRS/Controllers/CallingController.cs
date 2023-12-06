@@ -2,7 +2,7 @@
 using AutoMapper;
 using Ambulance_API_CQRS.Models.DTO;
 using Ambulance_API_CQRS.Application.Calling.Command.CreateCalling;
-using System.ComponentModel;
+
 
 namespace Ambulance_API_CQRS.Controllers
 {
@@ -18,12 +18,15 @@ namespace Ambulance_API_CQRS.Controllers
         [ProducesResponseType(StatusCodes.Status201Created)]
         public async Task<IActionResult> Create(int id, [FromBody] CreateCallingDto dto)
         {
-            dto.PatientId = id;
-            var command = _mapper.Map<CreateCallingCommand>(dto);
+            var command = _mapper.Map<CreateCallingCommand>(dto) with
+            {
+                PatientId = id
+            };
 
             await Mediator.Send(command);
 
             return Content("Операция произведена успешно");
         }
+        
     }
 }
