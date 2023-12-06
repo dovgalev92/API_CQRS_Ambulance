@@ -15,6 +15,7 @@ namespace Ambulance_API_CQRS.Infrastructure.ImplementationRepository
 
         public async Task<int> CreatePatient(Patient patient)
         {
+            
             await _application.Patients.AddAsync(patient);
             return patient.Id;
         }

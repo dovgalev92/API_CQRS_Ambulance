@@ -11,9 +11,9 @@ namespace Ambulance_API_CQRS.Infrastructure.ConfigurationEntities
         {
             builder.Property(d => d.BirthYear)
                 .HasColumnType("date");
-            builder.HasOne(c => c.CallingAmbulance)
+            builder.HasMany(c => c.CallingAmbulance)
                 .WithOne(p => p.Patient)
-                .HasForeignKey<Patient>(fk => fk.CallingAmbulanceId)
+                .HasForeignKey(fk => fk.PatientId)
                 .IsRequired();
             builder.HasOne(str => str.Street)
                 .WithMany(p => p.Patients)

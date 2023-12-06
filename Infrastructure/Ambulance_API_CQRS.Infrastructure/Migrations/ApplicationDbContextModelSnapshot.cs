@@ -89,6 +89,9 @@ namespace Ambulance_API_CQRS.Infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("PatientId")
+                        .HasColumnType("int");
+
                     b.Property<string>("RedirectCall")
                         .HasColumnType("nvarchar(max)");
 
@@ -98,6 +101,8 @@ namespace Ambulance_API_CQRS.Infrastructure.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("DateCall");
+
+                    b.HasIndex("PatientId");
 
                     b.ToTable("Callings");
                 });
@@ -133,9 +138,6 @@ namespace Ambulance_API_CQRS.Infrastructure.Migrations
                     b.Property<DateTime>("BirthYear")
                         .HasColumnType("date");
 
-                    b.Property<int>("CallingAmbulanceId")
-                        .HasColumnType("int");
-
                     b.Property<string>("FamilyName")
                         .IsRequired()
                         .HasColumnType("nvarchar(450)");
@@ -155,9 +157,6 @@ namespace Ambulance_API_CQRS.Infrastructure.Migrations
                         .HasColumnType("int");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("CallingAmbulanceId")
-                        .IsUnique();
 
                     b.HasIndex("LocalityId");
 
@@ -211,14 +210,19 @@ namespace Ambulance_API_CQRS.Infrastructure.Migrations
                     b.Navigation("Calling");
                 });
 
-            modelBuilder.Entity("Ambulance_API_CQRS.Domain.Entities.Patient", b =>
+            modelBuilder.Entity("Ambulance_API_CQRS.Domain.Entities.CallingAmbulance", b =>
                 {
-                    b.HasOne("Ambulance_API_CQRS.Domain.Entities.CallingAmbulance", "CallingAmbulance")
-                        .WithOne("Patient")
-                        .HasForeignKey("Ambulance_API_CQRS.Domain.Entities.Patient", "CallingAmbulanceId")
+                    b.HasOne("Ambulance_API_CQRS.Domain.Entities.Patient", "Patient")
+                        .WithMany("CallingAmbulance")
+                        .HasForeignKey("PatientId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.Navigation("Patient");
+                });
+
+            modelBuilder.Entity("Ambulance_API_CQRS.Domain.Entities.Patient", b =>
+                {
                     b.HasOne("Ambulance_API_CQRS.Domain.Entities.Locality", "Locality")
                         .WithMany("Patients")
                         .HasForeignKey("LocalityId");
@@ -226,8 +230,6 @@ namespace Ambulance_API_CQRS.Infrastructure.Migrations
                     b.HasOne("Ambulance_API_CQRS.Domain.Entities.Street", "Street")
                         .WithMany("Patients")
                         .HasForeignKey("StreetId");
-
-                    b.Navigation("CallingAmbulance");
 
                     b.Navigation("Locality");
 
@@ -247,11 +249,7 @@ namespace Ambulance_API_CQRS.Infrastructure.Migrations
 
             modelBuilder.Entity("Ambulance_API_CQRS.Domain.Entities.CallingAmbulance", b =>
                 {
-                    b.Navigation("Departure")
-                        .IsRequired();
-
-                    b.Navigation("Patient")
-                        .IsRequired();
+                    b.Navigation("Departure");
                 });
 
             modelBuilder.Entity("Ambulance_API_CQRS.Domain.Entities.Locality", b =>
@@ -259,6 +257,11 @@ namespace Ambulance_API_CQRS.Infrastructure.Migrations
                     b.Navigation("Patients");
 
                     b.Navigation("Streets");
+                });
+
+            modelBuilder.Entity("Ambulance_API_CQRS.Domain.Entities.Patient", b =>
+                {
+                    b.Navigation("CallingAmbulance");
                 });
 
             modelBuilder.Entity("Ambulance_API_CQRS.Domain.Entities.Street", b =>

@@ -11,8 +11,10 @@ namespace Ambulance_API_CQRS.Infrastructure.ConfigurationEntities
         {
             builder.Property(d => d.DateCall)
                 .HasColumnType("date");
-            builder.HasOne(p => p.Patient)
-                .WithOne(p => p.CallingAmbulance);
+            builder.HasOne(c => c.Patient)
+                .WithMany(c => c.CallingAmbulance)
+                .HasForeignKey(fk => fk.PatientId)
+                .IsRequired();
             builder.HasOne(d => d.Departure)
                 .WithOne(c => c.Calling);
             builder.HasIndex(idx => idx.DateCall);
