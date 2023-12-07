@@ -3,21 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34221.43
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ambulance_API_CQRS", "Ambulance_API_CQRS\Ambulance_API_CQRS.csproj", "{63799D8A-5330-459C-A8AE-6945C0DC2302}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ambulance_API_CQRS", "Ambulance_API_CQRS\Ambulance_API_CQRS.csproj", "{63799D8A-5330-459C-A8AE-6945C0DC2302}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{F15BB66C-F8D3-4E76-B128-7A1263A7C1D1}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{FE43906C-4FA4-482B-9C8D-8949E32F1939}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ambulance_API_CQRS.Domain", "..\..\Domain\Ambulance_API_CQRS.Domain\Ambulance_API_CQRS.Domain.csproj", "{5F4AEE1C-1BCA-4A5B-A62F-894EBBD48517}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ambulance_API_CQRS.Domain", "..\..\Domain\Ambulance_API_CQRS.Domain\Ambulance_API_CQRS.Domain.csproj", "{5F4AEE1C-1BCA-4A5B-A62F-894EBBD48517}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{51AFC2E7-2C5A-4F67-8865-62555F85FCAC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ambulance_API_CQRS.Application", "..\..\Application\Ambulance_API_CQRS.Application\Ambulance_API_CQRS.Application.csproj", "{9A485833-8C5D-4180-B457-4C49663BB7C1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ambulance_API_CQRS.Application", "..\..\Application\Ambulance_API_CQRS.Application\Ambulance_API_CQRS.Application.csproj", "{9A485833-8C5D-4180-B457-4C49663BB7C1}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{E7AFDBA2-8F6B-4FC4-8422-E4F4AA99F1EB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ambulance_API_CQRS.Infrastructure", "..\..\Infrastructure\Ambulance_API_CQRS.Infrastructure\Ambulance_API_CQRS.Infrastructure.csproj", "{C8DE5881-5373-40D5-B182-761C65E0F7E7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ambulance_API_CQRS.Infrastructure", "..\..\Infrastructure\Ambulance_API_CQRS.Infrastructure\Ambulance_API_CQRS.Infrastructure.csproj", "{C8DE5881-5373-40D5-B182-761C65E0F7E7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

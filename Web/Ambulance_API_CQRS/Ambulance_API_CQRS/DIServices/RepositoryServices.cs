@@ -1,4 +1,5 @@
 ﻿using Ambulance_API_CQRS.Application.Common.Interfaces.CallingAmbual;
+using Ambulance_API_CQRS.Application.Common.Interfaces.DepartRepos;
 using Ambulance_API_CQRS.Application.Common.Interfaces.PatientRepository;
 using Ambulance_API_CQRS.Infrastructure.ImplementationRepository;
 
@@ -10,6 +11,7 @@ namespace Ambulance_API_CQRS.Services
         {
             services.AddScoped<ICallingRepository, Callingrepository>();
             services.AddScoped<IPatientRepos, PatientRepos>();
+            services.AddScoped<IDepartRepository, DepartRepository>();
 
             return services;
         }

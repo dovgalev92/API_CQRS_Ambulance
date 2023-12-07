@@ -77,3 +77,5 @@ C:\Users\Admin\ProjectFilles\Проект скорой помощи\Web\Ambulanc
 C:\Users\Admin\ProjectFilles\Проект скорой помощи\Web\Ambulance_API_CQRS\Ambulance_API_CQRS\bin\Debug\net6.0\MediatR.dll
 C:\Users\Admin\ProjectFilles\Проект скорой помощи\Web\Ambulance_API_CQRS\Ambulance_API_CQRS\bin\Debug\net6.0\MediatR.Contracts.dll
 C:\Users\Admin\ProjectFilles\Проект скорой помощи\Web\Ambulance_API_CQRS\Ambulance_API_CQRS\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Admin\ProjectFilles\Проект скорой помощи\Web\Ambulance_API_CQRS\Ambulance_API_CQRS\bin\Debug\net6.0\FluentValidation.dll
+C:\Users\Admin\ProjectFilles\Проект скорой помощи\Web\Ambulance_API_CQRS\Ambulance_API_CQRS\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll
