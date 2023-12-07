@@ -28,6 +28,7 @@ namespace Ambulance_API_CQRS.Application.Calling.Command.CreateCalling
                 DateCall = DateTime.Now.Date,
                 TimeCall = new TimeSpan(DateTime.Now.Hour, DateTime.Now.Minute, DateTime.Now.Second),
                 CauseCall = request.CauseCall,
+                Priority = request.Priority,
                 RedirectCall = request.RedirectCall,
                 PatientId = request.PatientId
             });
