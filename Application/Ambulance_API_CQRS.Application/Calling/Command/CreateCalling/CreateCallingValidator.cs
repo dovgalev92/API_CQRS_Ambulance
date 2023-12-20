@@ -7,7 +7,7 @@ namespace Ambulance_API_CQRS.Application.Calling.Command.CreateCalling
         public CreateCallingValidator()
         {
             RuleFor(create => create.PatientId).NotNull();
-            RuleFor(create => create.NameOfCAllAmbulance).NotEmpty().MinimumLength(5).MaximumLength(45);
+            RuleFor(c => c.CauseCall).NotEmpty();
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using Ambulance_API_CQRS.Application.Common.Interfaces;
+﻿using Ambulance_API_CQRS.Application.Common.Exceptions;
+using Ambulance_API_CQRS.Application.Common.Interfaces;
 using Ambulance_API_CQRS.Application.Common.Interfaces.CallingAmbual;
 using Ambulance_API_CQRS.Domain.Entities;
 using MediatR;
@@ -6,7 +7,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Ambulance_API_CQRS.Application.Calling.Command.CreateCalling
 {
-    public class CreateCallingCommandHandler : IRequestHandler<CreateCallingCommand>
+    public class CreateCallingCommandHandler : IRequestHandler<CreateCallingCommand, int>
     {
         private readonly IApplicationDb _application;
         private readonly ICallingRepository _repository;
@@ -16,13 +17,13 @@ namespace Ambulance_API_CQRS.Application.Calling.Command.CreateCalling
             _repository = repository;
         }
 
-        public async Task Handle(CreateCallingCommand request, CancellationToken cancellationToken)
+        public async Task<int>Handle(CreateCallingCommand request, CancellationToken cancellationToken)
         {
             var queryId = await _application.Patients
                 .FirstOrDefaultAsync(x => x.Id == request.PatientId) != null ? request.PatientId 
-                : throw new ArgumentNullException(nameof(request.PatientId));
+                : throw new NotFoundException(nameof(Patient), request.PatientId);
 
-            await _repository.CreateCalling(new CallingAmbulance
+            var calling = new CallingAmbulance
             {
                 NameOfCAllAmbulance = request.NameOfCAllAmbulance,
                 DateCall = DateTime.Now.Date,
@@ -31,8 +32,11 @@ namespace Ambulance_API_CQRS.Application.Calling.Command.CreateCalling
                 Priority = request.Priority,
                 RedirectCall = request.RedirectCall,
                 PatientId = request.PatientId
-            });
+            };
+            await _repository.CreateCalling(calling);
+          
             await _application.SaveChangesAsync(cancellationToken);
+            return calling.Id;
         }
     }
 }

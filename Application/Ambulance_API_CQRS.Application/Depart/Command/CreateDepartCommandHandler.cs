@@ -3,6 +3,7 @@ using Ambulance_API_CQRS.Application.Common.Interfaces.DepartRepos;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Ambulance_API_CQRS.Domain.Entities;
+using Ambulance_API_CQRS.Application.Common.Exceptions;
 
 
 namespace Ambulance_API_CQRS.Application.Depart.Command
@@ -17,8 +18,7 @@ namespace Ambulance_API_CQRS.Application.Depart.Command
         public async Task Handle(CreateDepartCommand request, CancellationToken cancellationToken)
         {
             var queryId = _application.Callings.SingleOrDefault(x => x.Id == request.CallingAmbulanceId) != null ?
-                request.CallingAmbulanceId : throw new ArgumentNullException(nameof(request.CallingAmbulanceId));
-
+                request.CallingAmbulanceId : throw new NotFoundException(nameof(CallingAmbulance), request.CallingAmbulanceId);
             await _repository.CreateDepart(new AmbulanceDepart
             {
                 NumberAccident_AssistantSquad = request.NumberAccident_AssistantSquad,

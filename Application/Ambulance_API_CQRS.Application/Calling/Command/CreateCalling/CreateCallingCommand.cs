@@ -4,7 +4,7 @@ using MediatR;
 
 namespace Ambulance_API_CQRS.Application.Calling.Command.CreateCalling
 {
-    public record CreateCallingCommand : IRequest
+    public record CreateCallingCommand : IRequest<int>
     {
         public string NameOfCAllAmbulance { get; set; }
         public string CauseCall { get; set; }
