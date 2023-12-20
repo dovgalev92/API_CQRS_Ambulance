@@ -1,4 +1,5 @@
 ﻿using Ambulance_API_CQRS.Application.Patients.Command.CreatePatient;
+using Ambulance_API_CQRS.Application.Patients.Queries.GetAllPatient;
 using Ambulance_API_CQRS.Models.DTO.PatientDTO;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
@@ -21,5 +22,15 @@ namespace Ambulance_API_CQRS.Controllers
 
             return Ok(patientId);
         }
+        [HttpGet]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        public async Task<ActionResult<GetAllPatientVm>> GetPatient()
+        {
+            var query = new GetAllPatientsQuery();
+
+            return Ok(await Mediator.Send(query));
+
+        }
+
     }
 }

@@ -13,7 +13,13 @@ builder.Services.AddControllers();
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddAutoMapper(config => config.AddProfile(new AssemblyMappingProfiles(Assembly.GetExecutingAssembly())));
+builder.Services.AddAutoMapper(config =>
+{
+    config.AddProfile(new AssemblyMappingProfiles(Assembly.GetExecutingAssembly()));
+    config.AddProfile(new AssemblyMappingProfiles(typeof(IApplicationDb).Assembly));
+});
+
+
 builder.Services.AddApplication();
 
 
@@ -29,6 +35,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+app.UseExceptionHandler(o => { });
 
 app.UseHttpsRedirection();
 
