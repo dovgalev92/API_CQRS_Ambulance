@@ -27,6 +27,5 @@ namespace Ambulance_API_CQRS.Controllers
 
             return Content("Операция произведена успешно");
         }
-        
     }
 }
