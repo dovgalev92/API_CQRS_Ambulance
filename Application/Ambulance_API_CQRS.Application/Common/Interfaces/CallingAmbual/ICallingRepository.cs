@@ -4,6 +4,6 @@ namespace Ambulance_API_CQRS.Application.Common.Interfaces.CallingAmbual
 {
     public interface ICallingRepository
     {
-        Task<int> CreateCalling(CallingAmbulance create);
+        Task<int> CreateCalling(int id, CallingAmbulance create);
     }
 }

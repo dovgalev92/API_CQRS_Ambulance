@@ -4,6 +4,6 @@ namespace Ambulance_API_CQRS.Application.Common.Interfaces.DepartRepos
 {
     public interface IDepartRepository
     {
-        Task CreateDepart(AmbulanceDepart depart);
+        Task CreateDepart(int id, AmbulanceDepart depart);
     }
 }

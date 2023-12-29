@@ -10,7 +10,7 @@ namespace Ambulance_API_CQRS.Application.Patients.Queries.GetAllPatient
         public string FamilyName { get; set; }
         public string Name { get; set; }
         public string Patronymic { get; set; }
-        public DateTime BithYear { get; set; }
+        public DateTime BirthYear { get; set; }
 
         public void Mapping(Profile profile)
             => profile.CreateMap<Patient, GetAllPatientDto>();
