@@ -1,6 +1,7 @@
 ﻿using Ambulance_API_CQRS.Application.Common.Interfaces;
 using Ambulance_API_CQRS.Application.Common.Interfaces.PatientRepository;
 using Ambulance_API_CQRS.Domain.Entities;
+using Microsoft.EntityFrameworkCore;
 
 
 namespace Ambulance_API_CQRS.Infrastructure.ImplementationRepository
@@ -15,20 +16,20 @@ namespace Ambulance_API_CQRS.Infrastructure.ImplementationRepository
 
         public async Task<int> CreatePatient(Patient patient)
         {
-            
             await _application.Patients.AddAsync(patient);
             return patient.Id;
         }
 
-        public Task<IEnumerable<Patient>> GetAllPatients()
+        public async Task<IEnumerable<Patient>> GetAllPatients()
         {
-            throw new NotImplementedException();
+           return  await _application.Patients.AsNoTracking().ToListAsync();
         }
 
 
-        public Task<Patient> GetPatientById(int patientid)
+        public async Task<Patient> GetPatientById(int patientid)
         {
-            throw new NotImplementedException();
+            return await _application.Patients.Include(c => c.CallingAmbulance)
+                .FirstOrDefaultAsync(x => x.Id == patientid);
         }
     }
 }

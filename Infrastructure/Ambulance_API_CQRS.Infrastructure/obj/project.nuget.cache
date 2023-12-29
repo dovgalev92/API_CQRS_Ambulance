@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "kN1vw+tw7SKUduEuMU/GrpugRsYWBM9oHBfoRWiJIpJTxcQQiJOHt1IDJj0TPWZSP5fiRrjyyRMXGI+MMWIzqw==",
+  "dgSpecHash": "hbd6f6eTNSt65eNCE5IetyY0jRrLYv03/gyAD1AHovhQcBj4Aje5Za8EvyrPAppTg1pb5xeLd6n8U4BpsYsFFg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Admin\\ProjectFilles\\Проект скорой помощи\\Infrastructure\\Ambulance_API_CQRS.Infrastructure\\Ambulance_API_CQRS.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\fluentvalidation\\11.8.1\\fluentvalidation.11.8.1.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.8.1\\fluentvalidation.dependencyinjectionextensions.11.8.1.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\mediatr\\12.2.0\\mediatr.12.2.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",

@@ -17,3 +17,4 @@ C:\Users\Admin\ProjectFilles\Проект скорой помощи\Infrastructu
 C:\Users\Admin\ProjectFilles\Проект скорой помощи\Infrastructure\Ambulance_API_CQRS.Infrastructure\obj\Debug\net6.0\Ambulance_API_CQRS.Infrastructure.pdb
 C:\Users\Admin\ProjectFilles\Проект скорой помощи\Infrastructure\Ambulance_API_CQRS.Infrastructure\obj\Debug\net6.0\Ambulance_API_CQRS.Infrastructure.genruntimeconfig.cache
 C:\Users\Admin\ProjectFilles\Проект скорой помощи\Infrastructure\Ambulance_API_CQRS.Infrastructure\obj\Debug\net6.0\ref\Ambulance_API_CQRS.Infrastructure.dll
+C:\Users\Admin\ProjectFilles\Проект скорой помощи\Infrastructure\Ambulance_API_CQRS.Infrastructure\obj\Debug\net6.0\Ambulance_API_CQRS.Infrastructure.sourcelink.json
