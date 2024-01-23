@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "hbd6f6eTNSt65eNCE5IetyY0jRrLYv03/gyAD1AHovhQcBj4Aje5Za8EvyrPAppTg1pb5xeLd6n8U4BpsYsFFg==",
+  "dgSpecHash": "kuN3xWYtmndTa13ZrOIhloDIZV3NUA6WvG8C1yXWF8RxG10Fyppe3eaMBXVqMfnuaIHFIAciGeEreVLeA/UZ3w==",
   "success": true,
   "projectFilePath": "C:\\Users\\Admin\\ProjectFilles\\Проект скорой помощи\\Infrastructure\\Ambulance_API_CQRS.Infrastructure\\Ambulance_API_CQRS.Infrastructure.csproj",
   "expectedPackageFiles": [
@@ -38,6 +38,7 @@
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\system.collections.immutable\\6.0.0\\system.collections.immutable.6.0.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\system.configuration.configurationmanager\\4.7.0\\system.configuration.configurationmanager.4.7.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.1\\system.diagnostics.diagnosticsource.6.0.1.nupkg.sha512",

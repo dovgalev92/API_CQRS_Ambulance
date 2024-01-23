@@ -1,7 +1,13 @@
 ﻿using Ambulance_API_CQRS.Application.Common.Interfaces;
 using Ambulance_API_CQRS.Application.Common.Interfaces.PatientRepository;
+using Ambulance_API_CQRS.Application.Patients;
+using Ambulance_API_CQRS.Application.Patients.Queries;
 using Ambulance_API_CQRS.Domain.Entities;
+using Ambulance_API_CQRS.Infrastructure.EfCore;
 using Microsoft.EntityFrameworkCore;
+using System.Linq;
+using System.Linq.Expressions;
+using System.Xml.Linq;
 
 
 namespace Ambulance_API_CQRS.Infrastructure.ImplementationRepository
@@ -9,6 +15,7 @@ namespace Ambulance_API_CQRS.Infrastructure.ImplementationRepository
     public class PatientRepos : IPatientRepos
     {
         private readonly IApplicationDb _application;
+        private readonly ApplicationDbContext context;
         public PatientRepos(IApplicationDb application)
         {
             _application = application;
@@ -20,16 +27,38 @@ namespace Ambulance_API_CQRS.Infrastructure.ImplementationRepository
             return patient.Id;
         }
 
-        public async Task<IEnumerable<Patient>> GetAllPatients()
+        public IQueryable<Patient> FindAll()
         {
-           return  await _application.Patients.AsNoTracking().ToListAsync();
+            IQueryable<Patient> patients = _application.Patients.AsQueryable().AsNoTracking();
+            return patients;
         }
 
+        public async Task<IEnumerable<Patient>> Get(Expression<Func<Patient, bool>> filter)
+        {
+            return await _application.Patients.Where(filter).Include(c => c.CallingAmbulance).ToListAsync();
+        }
+
+        public async Task<PagedList<Patient>> GetAllPatients(PatientParametr patientParametr)
+        {
+            var patient = FindAll();
+
+            if (!patient.Any() || string.IsNullOrWhiteSpace(patientParametr.FamilyName) || string.IsNullOrWhiteSpace(patientParametr.Name) 
+                || string.IsNullOrWhiteSpace(patientParametr.Patronymic))
+            {
+                return await PagedList<Patient>.ToPagedList(patient, patientParametr.PageNumber, patientParametr.PageSize);
+            }
+
+            var sortPatient = patient.Where(x => x.FamilyName.Contains(patientParametr.FamilyName)
+            && x.Name.Contains(patientParametr.Name) && x.Patronymic.Contains(patientParametr.Patronymic));
+
+            return await PagedList<Patient>.ToPagedList(sortPatient, patientParametr.PageNumber, patientParametr.PageSize);
+        }
 
         public async Task<Patient> GetPatientById(int patientid)
         {
             return await _application.Patients.Include(c => c.CallingAmbulance)
                 .FirstOrDefaultAsync(x => x.Id == patientid);
         }
+
     }
 }
