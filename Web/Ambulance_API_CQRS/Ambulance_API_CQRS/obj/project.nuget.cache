@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "XX9RH5pp+VQMTGU442pNae+tHr2wdLXY6csJFZOMasxzBvq08bz2P3vdcfX0kcQKBPp2xvhdaObL8Zv4CyRDhA==",
+  "dgSpecHash": "85vqK+k2N+mOk9/J87gLniMT9JtuyXWAkgjl4dOHDJJyjubE7Hv09kpfWxNzj7f0zqIytdkLhsLy004W7bx49w==",
   "success": true,
   "projectFilePath": "C:\\Users\\Admin\\ProjectFilles\\Проект скорой помощи\\Web\\Ambulance_API_CQRS\\Ambulance_API_CQRS\\Ambulance_API_CQRS.csproj",
   "expectedPackageFiles": [
@@ -41,6 +41,7 @@
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\swashbuckle.aspnetcore\\6.5.0\\swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.5.0\\swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.5.0\\swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
