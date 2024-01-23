@@ -32,7 +32,7 @@ namespace Ambulance_API_CQRS.Application.Patients.Queries.GetPatientDetails
             .ForMember(dto => dto.CauseCall, map => map.MapFrom(x => string.Join(",", x.CallingAmbulance.OrderBy(i => i.PatientId == x.Id)
                 .Select(cause => cause.CauseCall))))
             .ForMember(dto => dto.DateCall, map => map.MapFrom(d => string.Join(",", d.CallingAmbulance.OrderBy(i => i.PatientId == d.Id)
-                .Select(d => d.DateCall))))
+                .Select(d => d.DateCall.ToString("D")))))
             .ForMember(dto => dto.TimeCall, map => map.MapFrom(d => string.Join(",", d.CallingAmbulance.OrderBy(i => i.PatientId == d.Id)
                 .Select(t => t.TimeCall))));
 

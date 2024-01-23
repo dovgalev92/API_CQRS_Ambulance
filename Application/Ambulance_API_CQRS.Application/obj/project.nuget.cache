@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "BISuwXsR007RCBUjoXwfpxWluSfMYcZUFAkAGwCQ2MEkzKXDxHf6crgoEGzU9uVdleoD8Z0AboXPwZ/AaL9nlA==",
+  "dgSpecHash": "yR78E3BV/blheMIrOzz9vhbHo7npl72DMAdpFE2KssFwj+fz5uQ5fv+7ILcmvKGEWY77dnmN8UPV5praWq4Tsg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Admin\\ProjectFilles\\Проект скорой помощи\\Application\\Ambulance_API_CQRS.Application\\Ambulance_API_CQRS.Application.csproj",
   "expectedPackageFiles": [
@@ -21,6 +21,7 @@
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\system.collections.immutable\\6.0.0\\system.collections.immutable.6.0.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.1\\system.diagnostics.diagnosticsource.6.0.1.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
