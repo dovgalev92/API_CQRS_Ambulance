@@ -81,3 +81,6 @@ C:\Users\Admin\ProjectFilles\Проект скорой помощи\Web\Ambulanc
 C:\Users\Admin\ProjectFilles\Проект скорой помощи\Web\Ambulance_API_CQRS\Ambulance_API_CQRS\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll
 C:\Users\Admin\ProjectFilles\Проект скорой помощи\Web\Ambulance_API_CQRS\Ambulance_API_CQRS\obj\Debug\net6.0\Ambulance_API_CQRS.sourcelink.json
 C:\Users\Admin\ProjectFilles\Проект скорой помощи\Web\Ambulance_API_CQRS\Ambulance_API_CQRS\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\Admin\ProjectFilles\Проект скорой помощи\Web\Ambulance_API_CQRS\Ambulance_API_CQRS\bin\Debug\net6.0\nlog.config
+C:\Users\Admin\ProjectFilles\Проект скорой помощи\Web\Ambulance_API_CQRS\Ambulance_API_CQRS\bin\Debug\net6.0\NLog.dll
+C:\Users\Admin\ProjectFilles\Проект скорой помощи\Web\Ambulance_API_CQRS\Ambulance_API_CQRS\bin\Debug\net6.0\NLog.Extensions.Logging.dll

@@ -1,0 +1,333 @@
+2024-02-16 20:42:50.2040 Debug Message Template Auto Format enabled
+2024-02-16 20:42:50.4037 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2024-02-16 20:42:50.4037 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2024-02-16 20:42:50.4037 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2024-02-16 20:42:50.4037 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2024-02-16 20:42:50.4181 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2024-02-16 20:42:50.4181 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2024-02-16 20:42:50.4181 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2024-02-16 20:42:50.4181 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2024-02-16 20:42:50.4181 Debug Adding target NLog.Targets.FileTarget(Name=allfile)
+2024-02-16 20:42:50.4181 Info Registered target NLog.Targets.FileTarget(Name=allfile)
+2024-02-16 20:42:50.4181 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2024-02-16 20:42:50.4181 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2024-02-16 20:42:50.4181 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2024-02-16 20:42:50.4181 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2024-02-16 20:42:50.4181 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2024-02-16 20:42:50.4181 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2024-02-16 20:42:50.4181 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2024-02-16 20:42:50.4181 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2024-02-16 20:42:50.4181 Debug Adding target NLog.Targets.FileTarget(Name=ownFile)
+2024-02-16 20:42:50.4181 Info Registered target NLog.Targets.FileTarget(Name=ownFile)
+2024-02-16 20:42:50.4181 Trace ParseRulesElement
+2024-02-16 20:42:50.4654 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-02-16 20:42:50.4805 Debug Start watching file-filter 'nlog.config' in directory: C:\Users\Admin\ProjectFilles\Проект скорой помощи\Web\Ambulance_API_CQRS\Ambulance_API_CQRS
+2024-02-16 20:42:50.4805 Debug --- NLog configuration dump ---
+2024-02-16 20:42:50.4805 Debug Targets:
+2024-02-16 20:42:50.4805 Debug FileTarget(Name=allfile)
+2024-02-16 20:42:50.4805 Debug FileTarget(Name=ownFile)
+2024-02-16 20:42:50.4805 Debug Rules:
+2024-02-16 20:42:50.4805 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ allfile ]
+2024-02-16 20:42:50.4935 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ ownFile ]
+2024-02-16 20:42:50.4935 Debug --- End of NLog configuration dump ---
+2024-02-16 20:42:50.4935 Trace FindReachableObject<System.Object>:
+2024-02-16 20:42:50.4935 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ allfile ]'
+2024-02-16 20:42:50.4935 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic.IList`1[NLog.Targets.Target]
+2024-02-16 20:42:50.5119 Trace  Scanning FileTarget 'FileTarget(Name=allfile)'
+2024-02-16 20:42:50.5119 Trace   Scanning Property FileName 'C:\Users\Admin\ProjectFilles\Проект скорой помощи\Web\Ambulance_API_CQRS\Ambulance_API_CQRS\Logs\nlog-all-${shortdate}' NLog.Layouts.Layout
+2024-02-16 20:42:50.5119 Trace   Scanning SimpleLayout 'C:\Users\Admin\ProjectFilles\Проект скорой помощи\Web\Ambulance_API_CQRS\Ambulance_API_CQRS\Logs\nlog-all-${shortdate}'
+2024-02-16 20:42:50.5119 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2024-02-16 20:42:50.5119 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-02-16 20:42:50.5252 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2024-02-16 20:42:50.5462 Trace   Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts.Layout
+2024-02-16 20:42:50.5462 Trace   Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2024-02-16 20:42:50.5462 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2024-02-16 20:42:50.5579 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2024-02-16 20:42:50.5579 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-02-16 20:42:50.5579 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2024-02-16 20:42:50.5579 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-02-16 20:42:50.5579 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2024-02-16 20:42:50.5579 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic.IList`1[NLog.Config.LoggingRule]
+2024-02-16 20:42:50.5579 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic.IList`1[NLog.Filters.Filter]
+2024-02-16 20:42:50.5579 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ ownFile ]'
+2024-02-16 20:42:50.5579 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic.IList`1[NLog.Targets.Target]
+2024-02-16 20:42:50.5579 Trace  Scanning FileTarget 'FileTarget(Name=ownFile)'
+2024-02-16 20:42:50.5579 Trace   Scanning Property FileName 'C:\Users\Admin\ProjectFilles\Проект скорой помощи\Web\Ambulance_API_CQRS\Ambulance_API_CQRS\Logs\nlog-own-${shortdate}' NLog.Layouts.Layout
+2024-02-16 20:42:50.5579 Trace   Scanning SimpleLayout 'C:\Users\Admin\ProjectFilles\Проект скорой помощи\Web\Ambulance_API_CQRS\Ambulance_API_CQRS\Logs\nlog-own-${shortdate}'
+2024-02-16 20:42:50.5579 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2024-02-16 20:42:50.5579 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-02-16 20:42:50.5727 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2024-02-16 20:42:50.5727 Trace   Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts.Layout
+2024-02-16 20:42:50.5727 Trace   Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2024-02-16 20:42:50.5727 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2024-02-16 20:42:50.5727 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2024-02-16 20:42:50.5727 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-02-16 20:42:50.5727 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2024-02-16 20:42:50.5727 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-02-16 20:42:50.5727 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2024-02-16 20:42:50.5727 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic.IList`1[NLog.Config.LoggingRule]
+2024-02-16 20:42:50.5727 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic.IList`1[NLog.Filters.Filter]
+2024-02-16 20:42:50.5881 Info Validating config: TargetNames=allfile, ownFile, ConfigItems=22, FilePath=C:\Users\Admin\ProjectFilles\Проект скорой помощи\Web\Ambulance_API_CQRS\Ambulance_API_CQRS\nlog.config
+2024-02-16 20:42:50.5881 Debug Unused target checking is started... Rule Count: 2, Target Count: 2
+2024-02-16 20:42:50.6045 Debug Unused target checking is completed. Total Rule Count: 2, Total Target Count: 2, Unused Target Count: 0
+2024-02-16 20:42:50.6045 Trace Initializing Layout Renderer: ${message}
+2024-02-16 20:42:50.6045 Trace Initializing Layout Renderer: ${literal}
+2024-02-16 20:42:50.6045 Trace Initializing Layout Renderer: ${level}
+2024-02-16 20:42:50.6045 Trace Initializing Layout Renderer: ${literal}
+2024-02-16 20:42:50.6045 Trace Initializing Layout Renderer: ${longdate}
+2024-02-16 20:42:50.6045 Trace Initializing ${longdate} ${level:uppercase=true} ${message}
+2024-02-16 20:42:50.6191 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2024-02-16 20:42:50.6191 Trace Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2024-02-16 20:42:50.6191 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2024-02-16 20:42:50.6191 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2024-02-16 20:42:50.6191 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-02-16 20:42:50.6191 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2024-02-16 20:42:50.6191 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-02-16 20:42:50.6191 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2024-02-16 20:42:50.6191 Trace Initializing Layout Renderer: ${shortdate}
+2024-02-16 20:42:50.6191 Trace Initializing Layout Renderer: ${literal}
+2024-02-16 20:42:50.6191 Trace Initializing C:\Users\Admin\ProjectFilles\Проект скорой помощи\Web\Ambulance_API_CQRS\Ambulance_API_CQRS\Logs\nlog-own-${shortdate}
+2024-02-16 20:42:50.6191 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2024-02-16 20:42:50.6341 Trace Scanning SimpleLayout 'C:\Users\Admin\ProjectFilles\Проект скорой помощи\Web\Ambulance_API_CQRS\Ambulance_API_CQRS\Logs\nlog-own-${shortdate}'
+2024-02-16 20:42:50.6341 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2024-02-16 20:42:50.6341 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-02-16 20:42:50.6341 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2024-02-16 20:42:50.6341 Trace Initializing FileTarget(Name=ownFile)
+2024-02-16 20:42:50.6341 Trace FindReachableObject<NLog.Layouts.Layout>:
+2024-02-16 20:42:50.6341 Trace Scanning FileTarget 'FileTarget(Name=ownFile)'
+2024-02-16 20:42:50.6341 Trace  Scanning Property FileName 'C:\Users\Admin\ProjectFilles\Проект скорой помощи\Web\Ambulance_API_CQRS\Ambulance_API_CQRS\Logs\nlog-own-${shortdate}' NLog.Layouts.Layout
+2024-02-16 20:42:50.6341 Trace  Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts.Layout
+2024-02-16 20:42:50.6341 Trace FileTarget(Name=ownFile) has 2 layouts
+2024-02-16 20:42:50.6537 Trace FileTarget(Name=ownFile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2024-02-16 20:42:50.6537 Trace Initializing Layout Renderer: ${message}
+2024-02-16 20:42:50.6537 Trace Initializing Layout Renderer: ${literal}
+2024-02-16 20:42:50.6537 Trace Initializing Layout Renderer: ${level}
+2024-02-16 20:42:50.6537 Trace Initializing Layout Renderer: ${literal}
+2024-02-16 20:42:50.6537 Trace Initializing Layout Renderer: ${longdate}
+2024-02-16 20:42:50.6537 Trace Initializing ${longdate} ${level:uppercase=true} ${message}
+2024-02-16 20:42:50.6537 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2024-02-16 20:42:50.6537 Trace Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2024-02-16 20:42:50.6537 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2024-02-16 20:42:50.6537 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2024-02-16 20:42:50.6537 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-02-16 20:42:50.6647 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2024-02-16 20:42:50.6647 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-02-16 20:42:50.6647 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2024-02-16 20:42:50.6647 Trace Initializing Layout Renderer: ${shortdate}
+2024-02-16 20:42:50.6647 Trace Initializing Layout Renderer: ${literal}
+2024-02-16 20:42:50.6647 Trace Initializing C:\Users\Admin\ProjectFilles\Проект скорой помощи\Web\Ambulance_API_CQRS\Ambulance_API_CQRS\Logs\nlog-all-${shortdate}
+2024-02-16 20:42:50.6647 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2024-02-16 20:42:50.6647 Trace Scanning SimpleLayout 'C:\Users\Admin\ProjectFilles\Проект скорой помощи\Web\Ambulance_API_CQRS\Ambulance_API_CQRS\Logs\nlog-all-${shortdate}'
+2024-02-16 20:42:50.6647 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2024-02-16 20:42:50.6647 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-02-16 20:42:50.6647 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2024-02-16 20:42:50.6647 Trace Initializing FileTarget(Name=allfile)
+2024-02-16 20:42:50.6806 Trace FindReachableObject<NLog.Layouts.Layout>:
+2024-02-16 20:42:50.6806 Trace Scanning FileTarget 'FileTarget(Name=allfile)'
+2024-02-16 20:42:50.6806 Trace  Scanning Property FileName 'C:\Users\Admin\ProjectFilles\Проект скорой помощи\Web\Ambulance_API_CQRS\Ambulance_API_CQRS\Logs\nlog-all-${shortdate}' NLog.Layouts.Layout
+2024-02-16 20:42:50.6806 Trace  Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts.Layout
+2024-02-16 20:42:50.6806 Trace FileTarget(Name=allfile) has 2 layouts
+2024-02-16 20:42:50.6806 Trace FileTarget(Name=allfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2024-02-16 20:42:50.6806 Info Configuration initialized.
+2024-02-16 20:43:15.3193 Debug Targets configured when LogLevel >= Debug for Logger: Ambulance_API_CQRS.Application.LoggerImplementation.LoggerManager
+2024-02-16 20:43:15.3193 Debug Logger Ambulance_API_CQRS.Application.LoggerImplementation.LoggerManager [Debug] => allfile ownFile
+2024-02-16 20:43:15.3193 Debug Logger Ambulance_API_CQRS.Application.LoggerImplementation.LoggerManager [Info] => allfile ownFile
+2024-02-16 20:43:15.3193 Debug Logger Ambulance_API_CQRS.Application.LoggerImplementation.LoggerManager [Warn] => allfile ownFile
+2024-02-16 20:43:15.3206 Debug Logger Ambulance_API_CQRS.Application.LoggerImplementation.LoggerManager [Error] => allfile ownFile
+2024-02-16 20:43:15.3206 Debug Logger Ambulance_API_CQRS.Application.LoggerImplementation.LoggerManager [Fatal] => allfile ownFile
+2024-02-16 20:43:15.3437 Debug FileTarget(Name=allfile): Preparing for new file: 'C:\Users\Admin\ProjectFilles\Проект скорой помощи\Web\Ambulance_API_CQRS\Ambulance_API_CQRS\Logs\nlog-all-2024-02-16'
+2024-02-16 20:43:15.3437 Debug FileTarget(Name=allfile): Creating file appender: 'C:\Users\Admin\ProjectFilles\Проект скорой помощи\Web\Ambulance_API_CQRS\Ambulance_API_CQRS\Logs\nlog-all-2024-02-16'
+2024-02-16 20:43:15.3533 Trace FileTarget(Name=allfile): Opening C:\Users\Admin\ProjectFilles\Проект скорой помощи\Web\Ambulance_API_CQRS\Ambulance_API_CQRS\Logs\nlog-all-2024-02-16 with allowFileSharedWriting=False
+2024-02-16 20:43:15.3533 Debug FileTarget(Name=ownFile): Preparing for new file: 'C:\Users\Admin\ProjectFilles\Проект скорой помощи\Web\Ambulance_API_CQRS\Ambulance_API_CQRS\Logs\nlog-own-2024-02-16'
+2024-02-16 20:43:15.3533 Debug FileTarget(Name=ownFile): Creating file appender: 'C:\Users\Admin\ProjectFilles\Проект скорой помощи\Web\Ambulance_API_CQRS\Ambulance_API_CQRS\Logs\nlog-own-2024-02-16'
+2024-02-16 20:43:15.3533 Trace FileTarget(Name=ownFile): Opening C:\Users\Admin\ProjectFilles\Проект скорой помощи\Web\Ambulance_API_CQRS\Ambulance_API_CQRS\Logs\nlog-own-2024-02-16 with allowFileSharedWriting=False
+2024-02-16 22:15:45.7542 Info AppDomain Shutting down. LogFactory closing...
+2024-02-16 22:15:45.7620 Debug Stop watching file-filter 'nlog.config' in directory: C:\Users\Admin\ProjectFilles\Проект скорой помощи\Web\Ambulance_API_CQRS\Ambulance_API_CQRS
+2024-02-16 22:15:45.7620 Trace Flushing all 2 targets...
+2024-02-16 22:15:45.7620 Trace ForEachItemInParallel() 2 items
+2024-02-16 22:15:45.7907 Trace FileTarget(Name=ownFile): FlushAsync
+2024-02-16 22:15:45.7907 Trace FileTarget(Name=allfile): FlushAsync
+2024-02-16 22:15:45.7907 Trace Continuation invoked: 
+2024-02-16 22:15:45.7907 Trace Continuation invoked: 
+2024-02-16 22:15:45.7907 Trace Parallel task completed. 1 items remaining
+2024-02-16 22:15:45.7907 Trace Parallel task completed. 0 items remaining
+2024-02-16 22:15:45.7907 Trace FileTarget(Name=allfile): FlushAsync Done
+2024-02-16 22:15:45.7907 Debug Flush completed
+2024-02-16 22:15:45.7907 Trace FileTarget(Name=ownFile): FlushAsync Done
+2024-02-16 22:15:45.7907 Debug Targets not configured for Logger: Ambulance_API_CQRS.Application.LoggerImplementation.LoggerManager
+2024-02-16 22:15:45.7907 Debug Closing logging configuration...
+2024-02-16 22:15:45.7907 Trace Closing FileTarget(Name=allfile)
+2024-02-16 22:15:45.7907 Debug FileTarget(Name=allfile): Closing...
+2024-02-16 22:15:45.7907 Trace FileTarget(Name=allfile): FinalizeFile 'C:\Users\Admin\ProjectFilles\Проект скорой помощи\Web\Ambulance_API_CQRS\Ambulance_API_CQRS\Logs\nlog-all-2024-02-16, isArchiving: False'
+2024-02-16 22:15:45.7907 Debug FileTarget(Name=allfile): FileAppender Invalidate Closing File: 'C:\Users\Admin\ProjectFilles\Проект скорой помощи\Web\Ambulance_API_CQRS\Ambulance_API_CQRS\Logs\nlog-all-2024-02-16'
+2024-02-16 22:15:45.7907 Trace FileTarget: Closing 'C:\Users\Admin\ProjectFilles\Проект скорой помощи\Web\Ambulance_API_CQRS\Ambulance_API_CQRS\Logs\nlog-all-2024-02-16'
+2024-02-16 22:15:45.8075 Debug FileTarget(Name=allfile): Closed.
+2024-02-16 22:15:45.8075 Trace Closing C:\Users\Admin\ProjectFilles\Проект скорой помощи\Web\Ambulance_API_CQRS\Ambulance_API_CQRS\Logs\nlog-all-${shortdate}
+2024-02-16 22:15:45.8075 Trace Closing Layout Renderer: ${literal}
+2024-02-16 22:15:45.8075 Trace Closing Layout Renderer: ${shortdate}
+2024-02-16 22:15:45.8075 Trace Closing ${longdate} ${level:uppercase=true} ${message}
+2024-02-16 22:15:45.8075 Trace Closing Layout Renderer: ${longdate}
+2024-02-16 22:15:45.8075 Trace Closing Layout Renderer: ${literal}
+2024-02-16 22:15:45.8075 Trace Closing Layout Renderer: ${level}
+2024-02-16 22:15:45.8075 Trace Closing Layout Renderer: ${literal}
+2024-02-16 22:15:45.8075 Trace Closing Layout Renderer: ${message}
+2024-02-16 22:15:45.8075 Trace Closing FileTarget(Name=ownFile)
+2024-02-16 22:15:45.8075 Debug FileTarget(Name=ownFile): Closing...
+2024-02-16 22:15:45.8075 Trace FileTarget(Name=ownFile): FinalizeFile 'C:\Users\Admin\ProjectFilles\Проект скорой помощи\Web\Ambulance_API_CQRS\Ambulance_API_CQRS\Logs\nlog-own-2024-02-16, isArchiving: False'
+2024-02-16 22:15:45.8075 Debug FileTarget(Name=ownFile): FileAppender Invalidate Closing File: 'C:\Users\Admin\ProjectFilles\Проект скорой помощи\Web\Ambulance_API_CQRS\Ambulance_API_CQRS\Logs\nlog-own-2024-02-16'
+2024-02-16 22:15:45.8075 Trace FileTarget: Closing 'C:\Users\Admin\ProjectFilles\Проект скорой помощи\Web\Ambulance_API_CQRS\Ambulance_API_CQRS\Logs\nlog-own-2024-02-16'
+2024-02-16 22:15:45.8075 Debug FileTarget(Name=ownFile): Closed.
+2024-02-16 22:15:45.8075 Trace Closing C:\Users\Admin\ProjectFilles\Проект скорой помощи\Web\Ambulance_API_CQRS\Ambulance_API_CQRS\Logs\nlog-own-${shortdate}
+2024-02-16 22:15:45.8075 Trace Closing Layout Renderer: ${literal}
+2024-02-16 22:15:45.8075 Trace Closing Layout Renderer: ${shortdate}
+2024-02-16 22:15:45.8075 Trace Closing ${longdate} ${level:uppercase=true} ${message}
+2024-02-16 22:15:45.8075 Trace Closing Layout Renderer: ${longdate}
+2024-02-16 22:15:45.8075 Trace Closing Layout Renderer: ${literal}
+2024-02-16 22:15:45.8075 Trace Closing Layout Renderer: ${level}
+2024-02-16 22:15:45.8075 Trace Closing Layout Renderer: ${literal}
+2024-02-16 22:15:45.8075 Trace Closing Layout Renderer: ${message}
+2024-02-16 22:15:45.8075 Debug Finished closing logging configuration.
+2024-02-16 22:15:45.8075 Info LogFactory has been closed.
+2024-02-16 23:07:27.4058 Debug Message Template Auto Format enabled
+2024-02-16 23:07:27.5125 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2024-02-16 23:07:27.5125 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2024-02-16 23:07:27.5300 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2024-02-16 23:07:27.5403 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2024-02-16 23:07:27.5584 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2024-02-16 23:07:27.5584 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2024-02-16 23:07:27.5815 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2024-02-16 23:07:27.5895 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2024-02-16 23:07:27.5895 Debug Adding target NLog.Targets.FileTarget(Name=allfile)
+2024-02-16 23:07:27.6065 Info Registered target NLog.Targets.FileTarget(Name=allfile)
+2024-02-16 23:07:27.6065 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2024-02-16 23:07:27.6195 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2024-02-16 23:07:27.6195 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2024-02-16 23:07:27.6195 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2024-02-16 23:07:27.6385 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2024-02-16 23:07:27.6385 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2024-02-16 23:07:27.6530 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2024-02-16 23:07:27.6530 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2024-02-16 23:07:27.6671 Debug Adding target NLog.Targets.FileTarget(Name=ownFile)
+2024-02-16 23:07:27.6671 Info Registered target NLog.Targets.FileTarget(Name=ownFile)
+2024-02-16 23:07:27.6815 Trace ParseRulesElement
+2024-02-16 23:07:27.7080 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-02-16 23:07:27.7201 Debug Start watching file-filter 'nlog.config' in directory: C:\Users\Admin\ProjectFilles\Проект скорой помощи\Web\Ambulance_API_CQRS\Ambulance_API_CQRS
+2024-02-16 23:07:27.7201 Debug --- NLog configuration dump ---
+2024-02-16 23:07:27.7338 Debug Targets:
+2024-02-16 23:07:27.7338 Debug FileTarget(Name=allfile)
+2024-02-16 23:07:27.7481 Debug FileTarget(Name=ownFile)
+2024-02-16 23:07:27.7600 Debug Rules:
+2024-02-16 23:07:27.7600 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ allfile ]
+2024-02-16 23:07:27.7772 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ ownFile ]
+2024-02-16 23:07:27.7772 Debug --- End of NLog configuration dump ---
+2024-02-16 23:07:27.7952 Trace FindReachableObject<System.Object>:
+2024-02-16 23:07:27.7952 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ allfile ]'
+2024-02-16 23:07:27.8108 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic.IList`1[NLog.Targets.Target]
+2024-02-16 23:07:27.8108 Trace  Scanning FileTarget 'FileTarget(Name=allfile)'
+2024-02-16 23:07:27.8282 Trace   Scanning Property FileName 'C:\Users\Admin\ProjectFilles\Проект скорой помощи\Web\Ambulance_API_CQRS\Ambulance_API_CQRS\Logs\nlog-all-${shortdate}' NLog.Layouts.Layout
+2024-02-16 23:07:27.8282 Trace   Scanning SimpleLayout 'C:\Users\Admin\ProjectFilles\Проект скорой помощи\Web\Ambulance_API_CQRS\Ambulance_API_CQRS\Logs\nlog-all-${shortdate}'
+2024-02-16 23:07:27.8436 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2024-02-16 23:07:27.8436 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-02-16 23:07:27.8574 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2024-02-16 23:07:27.8574 Trace   Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts.Layout
+2024-02-16 23:07:27.8713 Trace   Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2024-02-16 23:07:27.8713 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2024-02-16 23:07:27.8856 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2024-02-16 23:07:27.8856 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-02-16 23:07:27.8856 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2024-02-16 23:07:27.9059 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-02-16 23:07:27.9059 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2024-02-16 23:07:27.9197 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic.IList`1[NLog.Config.LoggingRule]
+2024-02-16 23:07:27.9197 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic.IList`1[NLog.Filters.Filter]
+2024-02-16 23:07:27.9331 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] writeTo: [ ownFile ]'
+2024-02-16 23:07:27.9331 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic.IList`1[NLog.Targets.Target]
+2024-02-16 23:07:27.9468 Trace  Scanning FileTarget 'FileTarget(Name=ownFile)'
+2024-02-16 23:07:27.9468 Trace   Scanning Property FileName 'C:\Users\Admin\ProjectFilles\Проект скорой помощи\Web\Ambulance_API_CQRS\Ambulance_API_CQRS\Logs\nlog-own-${shortdate}' NLog.Layouts.Layout
+2024-02-16 23:07:27.9468 Trace   Scanning SimpleLayout 'C:\Users\Admin\ProjectFilles\Проект скорой помощи\Web\Ambulance_API_CQRS\Ambulance_API_CQRS\Logs\nlog-own-${shortdate}'
+2024-02-16 23:07:27.9713 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2024-02-16 23:07:27.9813 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-02-16 23:07:27.9813 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2024-02-16 23:07:27.9949 Trace   Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts.Layout
+2024-02-16 23:07:27.9949 Trace   Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2024-02-16 23:07:28.0085 Trace    Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2024-02-16 23:07:28.0085 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2024-02-16 23:07:28.0085 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-02-16 23:07:28.0307 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2024-02-16 23:07:28.0307 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-02-16 23:07:28.0458 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2024-02-16 23:07:28.0458 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic.IList`1[NLog.Config.LoggingRule]
+2024-02-16 23:07:28.0592 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic.IList`1[NLog.Filters.Filter]
+2024-02-16 23:07:28.0592 Info Validating config: TargetNames=allfile, ownFile, ConfigItems=22, FilePath=C:\Users\Admin\ProjectFilles\Проект скорой помощи\Web\Ambulance_API_CQRS\Ambulance_API_CQRS\nlog.config
+2024-02-16 23:07:28.0801 Debug Unused target checking is started... Rule Count: 2, Target Count: 2
+2024-02-16 23:07:28.0904 Debug Unused target checking is completed. Total Rule Count: 2, Total Target Count: 2, Unused Target Count: 0
+2024-02-16 23:07:28.0904 Trace Initializing Layout Renderer: ${message}
+2024-02-16 23:07:28.1050 Trace Initializing Layout Renderer: ${literal}
+2024-02-16 23:07:28.1050 Trace Initializing Layout Renderer: ${level}
+2024-02-16 23:07:28.1050 Trace Initializing Layout Renderer: ${literal}
+2024-02-16 23:07:28.1244 Trace Initializing Layout Renderer: ${longdate}
+2024-02-16 23:07:28.1244 Trace Initializing ${longdate} ${level:uppercase=true} ${message}
+2024-02-16 23:07:28.1392 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2024-02-16 23:07:28.1392 Trace Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2024-02-16 23:07:28.1532 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2024-02-16 23:07:28.1532 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2024-02-16 23:07:28.1666 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-02-16 23:07:28.1666 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2024-02-16 23:07:28.1807 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-02-16 23:07:28.1807 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2024-02-16 23:07:28.2007 Trace Initializing Layout Renderer: ${shortdate}
+2024-02-16 23:07:28.2007 Trace Initializing Layout Renderer: ${literal}
+2024-02-16 23:07:28.2152 Trace Initializing C:\Users\Admin\ProjectFilles\Проект скорой помощи\Web\Ambulance_API_CQRS\Ambulance_API_CQRS\Logs\nlog-own-${shortdate}
+2024-02-16 23:07:28.2152 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2024-02-16 23:07:28.2310 Trace Scanning SimpleLayout 'C:\Users\Admin\ProjectFilles\Проект скорой помощи\Web\Ambulance_API_CQRS\Ambulance_API_CQRS\Logs\nlog-own-${shortdate}'
+2024-02-16 23:07:28.2310 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2024-02-16 23:07:28.2446 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-02-16 23:07:28.2446 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2024-02-16 23:07:28.2446 Trace Initializing FileTarget(Name=ownFile)
+2024-02-16 23:07:28.2661 Trace FindReachableObject<NLog.Layouts.Layout>:
+2024-02-16 23:07:28.2661 Trace Scanning FileTarget 'FileTarget(Name=ownFile)'
+2024-02-16 23:07:28.2792 Trace  Scanning Property FileName 'C:\Users\Admin\ProjectFilles\Проект скорой помощи\Web\Ambulance_API_CQRS\Ambulance_API_CQRS\Logs\nlog-own-${shortdate}' NLog.Layouts.Layout
+2024-02-16 23:07:28.2792 Trace  Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts.Layout
+2024-02-16 23:07:28.2921 Trace FileTarget(Name=ownFile) has 2 layouts
+2024-02-16 23:07:28.2921 Trace FileTarget(Name=ownFile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2024-02-16 23:07:28.3062 Trace Initializing Layout Renderer: ${message}
+2024-02-16 23:07:28.3062 Trace Initializing Layout Renderer: ${literal}
+2024-02-16 23:07:28.3062 Trace Initializing Layout Renderer: ${level}
+2024-02-16 23:07:28.3251 Trace Initializing Layout Renderer: ${literal}
+2024-02-16 23:07:28.3251 Trace Initializing Layout Renderer: ${longdate}
+2024-02-16 23:07:28.3379 Trace Initializing ${longdate} ${level:uppercase=true} ${message}
+2024-02-16 23:07:28.3379 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2024-02-16 23:07:28.3379 Trace Scanning SimpleLayout '${longdate} ${level:uppercase=true} ${message}'
+2024-02-16 23:07:28.3568 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2024-02-16 23:07:28.3568 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2024-02-16 23:07:28.3696 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-02-16 23:07:28.3696 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2024-02-16 23:07:28.3696 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-02-16 23:07:28.3888 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2024-02-16 23:07:28.3888 Trace Initializing Layout Renderer: ${shortdate}
+2024-02-16 23:07:28.4055 Trace Initializing Layout Renderer: ${literal}
+2024-02-16 23:07:28.4055 Trace Initializing C:\Users\Admin\ProjectFilles\Проект скорой помощи\Web\Ambulance_API_CQRS\Ambulance_API_CQRS\Logs\nlog-all-${shortdate}
+2024-02-16 23:07:28.4196 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2024-02-16 23:07:28.4196 Trace Scanning SimpleLayout 'C:\Users\Admin\ProjectFilles\Проект скорой помощи\Web\Ambulance_API_CQRS\Ambulance_API_CQRS\Logs\nlog-all-${shortdate}'
+2024-02-16 23:07:28.4368 Trace  Scanning Property LayoutRenderers 'NLog.LayoutRenderers.LayoutRenderer[]' System.Collections.Generic.IEnumerable`1[NLog.LayoutRenderers.LayoutRenderer]
+2024-02-16 23:07:28.4368 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2024-02-16 23:07:28.4512 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2024-02-16 23:07:28.4512 Trace Initializing FileTarget(Name=allfile)
+2024-02-16 23:07:28.4648 Trace FindReachableObject<NLog.Layouts.Layout>:
+2024-02-16 23:07:28.4648 Trace Scanning FileTarget 'FileTarget(Name=allfile)'
+2024-02-16 23:07:28.4785 Trace  Scanning Property FileName 'C:\Users\Admin\ProjectFilles\Проект скорой помощи\Web\Ambulance_API_CQRS\Ambulance_API_CQRS\Logs\nlog-all-${shortdate}' NLog.Layouts.Layout
+2024-02-16 23:07:28.4785 Trace  Scanning Property Layout '${longdate} ${level:uppercase=true} ${message}' NLog.Layouts.Layout
+2024-02-16 23:07:28.4785 Trace FileTarget(Name=allfile) has 2 layouts
+2024-02-16 23:07:28.4982 Trace FileTarget(Name=allfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
+2024-02-16 23:07:28.4982 Info Configuration initialized.
+2024-02-16 23:07:56.9603 Debug Targets configured when LogLevel >= Debug for Logger: Ambulance_API_CQRS.Application.LoggerImplementation.LoggerManager
+2024-02-16 23:07:56.9603 Debug Logger Ambulance_API_CQRS.Application.LoggerImplementation.LoggerManager [Debug] => allfile ownFile
+2024-02-16 23:07:56.9603 Debug Logger Ambulance_API_CQRS.Application.LoggerImplementation.LoggerManager [Info] => allfile ownFile
+2024-02-16 23:07:56.9603 Debug Logger Ambulance_API_CQRS.Application.LoggerImplementation.LoggerManager [Warn] => allfile ownFile
+2024-02-16 23:07:56.9617 Debug Logger Ambulance_API_CQRS.Application.LoggerImplementation.LoggerManager [Error] => allfile ownFile
+2024-02-16 23:07:56.9617 Debug Logger Ambulance_API_CQRS.Application.LoggerImplementation.LoggerManager [Fatal] => allfile ownFile
+2024-02-16 23:07:56.9829 Debug FileTarget(Name=allfile): Preparing for new file: 'C:\Users\Admin\ProjectFilles\Проект скорой помощи\Web\Ambulance_API_CQRS\Ambulance_API_CQRS\Logs\nlog-all-2024-02-16'
+2024-02-16 23:07:56.9829 Debug FileTarget(Name=allfile): Creating file appender: 'C:\Users\Admin\ProjectFilles\Проект скорой помощи\Web\Ambulance_API_CQRS\Ambulance_API_CQRS\Logs\nlog-all-2024-02-16'
+2024-02-16 23:07:56.9829 Trace FileTarget(Name=allfile): Opening C:\Users\Admin\ProjectFilles\Проект скорой помощи\Web\Ambulance_API_CQRS\Ambulance_API_CQRS\Logs\nlog-all-2024-02-16 with allowFileSharedWriting=False
+2024-02-16 23:07:56.9973 Debug FileTarget(Name=ownFile): Preparing for new file: 'C:\Users\Admin\ProjectFilles\Проект скорой помощи\Web\Ambulance_API_CQRS\Ambulance_API_CQRS\Logs\nlog-own-2024-02-16'
+2024-02-16 23:07:56.9973 Debug FileTarget(Name=ownFile): Creating file appender: 'C:\Users\Admin\ProjectFilles\Проект скорой помощи\Web\Ambulance_API_CQRS\Ambulance_API_CQRS\Logs\nlog-own-2024-02-16'
+2024-02-16 23:07:56.9973 Trace FileTarget(Name=ownFile): Opening C:\Users\Admin\ProjectFilles\Проект скорой помощи\Web\Ambulance_API_CQRS\Ambulance_API_CQRS\Logs\nlog-own-2024-02-16 with allowFileSharedWriting=False
