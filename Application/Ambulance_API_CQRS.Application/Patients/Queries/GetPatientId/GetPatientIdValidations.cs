@@ -1,5 +1,4 @@
-﻿
-using FluentValidation;
+﻿using FluentValidation;
 
 namespace Ambulance_API_CQRS.Application.Patients.Queries.GetPatientId
 {

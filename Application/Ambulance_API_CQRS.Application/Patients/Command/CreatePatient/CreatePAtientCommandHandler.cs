@@ -1,5 +1,6 @@
 ﻿using Ambulance_API_CQRS.Application.Common.Interfaces;
 using Ambulance_API_CQRS.Application.Common.Interfaces.CallingAmbual;
+using Ambulance_API_CQRS.Application.Common.Interfaces.ILogger;
 using Ambulance_API_CQRS.Application.Common.Interfaces.PatientRepository;
 using Ambulance_API_CQRS.Domain.Entities;
 using MediatR;
@@ -11,9 +12,9 @@ namespace Ambulance_API_CQRS.Application.Patients.Command.CreatePatient
     {
         private readonly IPatientRepos _repos;
         private readonly IApplicationDb _application;
-
-        public CreatePAtientCommandHandler(IPatientRepos repos, IApplicationDb application) 
-            => (_repos, _application) = (repos, application);
+        private readonly ILoggerManager _logger;
+        public CreatePAtientCommandHandler(IPatientRepos repos, IApplicationDb application, ILoggerManager logger) 
+            => (_repos, _application, _logger) = (repos, application, logger);
 
         public async Task<int> Handle(CreatePatientCommand request, CancellationToken cancellation)
         {
@@ -25,9 +26,17 @@ namespace Ambulance_API_CQRS.Application.Patients.Command.CreatePatient
                 Age = request.Age,
                 BirthYear = request.BirthYear 
             };
-            
-            await _repos.CreatePatient(patient);
-            await _application.SaveChangesAsync(cancellation);
+
+            try
+            {
+                await _repos.CreatePatient(patient);
+                await _application.SaveChangesAsync(cancellation);
+                _logger.LogInfo("Patient create");
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError($"Something went wrong in the {nameof(CreatePAtientCommandHandler)} service method {ex}");
+            }
             return patient.Id;
         }
     }

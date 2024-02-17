@@ -33,9 +33,10 @@ namespace Ambulance_API_CQRS.Application.Calling.Command.CreateCalling
                 RedirectCall = request.RedirectCall,
                 PatientId = request.PatientId
             };
-            await _repository.CreateCalling(request.PatientId, calling);
+
             try
             {
+                await _repository.CreateCalling(request.PatientId, calling);
                 await _application.SaveChangesAsync(cancellationToken);
                 _logger.LogInfo("SaveChanges createCalling");
             }
