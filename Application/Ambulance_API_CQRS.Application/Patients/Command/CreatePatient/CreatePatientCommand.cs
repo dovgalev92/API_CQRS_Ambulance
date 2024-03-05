@@ -1,5 +1,5 @@
-﻿using Ambulance_API_CQRS.Domain.Entities;
-using MediatR;
+﻿using MediatR;
+
 namespace Ambulance_API_CQRS.Application.Patients.Command.CreatePatient
 {
     public class CreatePatientCommand : IRequest<int>

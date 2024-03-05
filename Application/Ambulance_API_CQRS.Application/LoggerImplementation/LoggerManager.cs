@@ -1,5 +1,4 @@
 ﻿using Ambulance_API_CQRS.Application.Common.Interfaces.ILogger;
-using Ambulance_API_CQRS.Domain.Entities;
 using NLog;
 
 
@@ -18,6 +17,5 @@ namespace Ambulance_API_CQRS.Application.LoggerImplementation
         public void LogInfo(string message) => logger.Info(message);
 
         public void LogWarning(string message) => logger.Warn(message);
-
     }
 }

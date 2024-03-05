@@ -1,7 +1,5 @@
-﻿
-namespace Ambulance_API_CQRS.Application.Common.Exceptions
+﻿namespace Ambulance_API_CQRS.Application.Common.Exceptions
 {
-
     public class NotFoundException : Exception
     {
         public NotFoundException(string name, object key)

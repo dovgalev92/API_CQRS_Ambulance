@@ -1,5 +1,4 @@
 ﻿
-
 namespace Ambulance_API_CQRS.Application.Common.Interfaces.ILogger
 {
     public interface ILoggerManager

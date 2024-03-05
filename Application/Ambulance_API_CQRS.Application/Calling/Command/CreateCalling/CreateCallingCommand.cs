@@ -1,5 +1,4 @@
-﻿
-using Ambulance_API_CQRS.Domain.Enums;
+﻿using Ambulance_API_CQRS.Domain.Enums;
 using MediatR;
 
 namespace Ambulance_API_CQRS.Application.Calling.Command.CreateCalling

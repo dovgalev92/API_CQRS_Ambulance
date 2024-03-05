@@ -1,5 +1,4 @@
-﻿using Ambulance_API_CQRS.Application.Common.Exceptions;
-using Ambulance_API_CQRS.Application.Common.Interfaces;
+﻿using Ambulance_API_CQRS.Application.Common.Interfaces;
 using Ambulance_API_CQRS.Application.Common.Interfaces.CallingAmbual;
 using Ambulance_API_CQRS.Application.Common.Interfaces.ILogger;
 using Ambulance_API_CQRS.Domain.Entities;
@@ -19,7 +18,6 @@ namespace Ambulance_API_CQRS.Application.Calling.Command.CreateCalling
             _repository = repository;
             _logger = logger;
         }
-
         public async Task<int>Handle(CreateCallingCommand request, CancellationToken cancellationToken)
         {
             

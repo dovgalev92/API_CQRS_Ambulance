@@ -1,10 +1,8 @@
 ﻿using Ambulance_API_CQRS.Application.Common.Interfaces;
-using Ambulance_API_CQRS.Application.Common.Interfaces.CallingAmbual;
 using Ambulance_API_CQRS.Application.Common.Interfaces.ILogger;
 using Ambulance_API_CQRS.Application.Common.Interfaces.PatientRepository;
 using Ambulance_API_CQRS.Domain.Entities;
 using MediatR;
-using Microsoft.EntityFrameworkCore;
 
 namespace Ambulance_API_CQRS.Application.Patients.Command.CreatePatient
 {

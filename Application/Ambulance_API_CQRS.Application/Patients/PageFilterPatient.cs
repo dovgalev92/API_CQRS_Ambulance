@@ -12,6 +12,5 @@ namespace Ambulance_API_CQRS.Application.Patients
             get { return _pageSize; }
             set { _pageSize = (value > maxPageSize) ? maxPageSize : value; }
         }
-
     }
 }
