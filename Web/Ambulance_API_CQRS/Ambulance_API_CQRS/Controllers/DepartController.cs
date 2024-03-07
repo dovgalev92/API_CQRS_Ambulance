@@ -29,6 +29,7 @@ namespace Ambulance_API_CQRS.Controllers
             await Mediator.Send(depart);
             return Content("операция произведена успешно");
         }
+        // api/Depart/5
         [HttpPut("{id}")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         public async Task<IActionResult> EditDepartTime (int id, [FromBody] EditDepartModel dto)
@@ -44,6 +45,7 @@ namespace Ambulance_API_CQRS.Controllers
 
             return Content("Обновление произошло успешно");
         }
+        // api/Depart/5
         [HttpGet("{id}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<ActionResult<DepartDetailDto>> DetailsDepart(int id)
