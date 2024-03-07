@@ -20,7 +20,6 @@ namespace Ambulance_API_CQRS.Application.Calling.Command.CreateCalling
         }
         public async Task<int>Handle(CreateCallingCommand request, CancellationToken cancellationToken)
         {
-            
             var calling = new CallingAmbulance
             {
                 NameOfCAllAmbulance = request.NameOfCAllAmbulance,

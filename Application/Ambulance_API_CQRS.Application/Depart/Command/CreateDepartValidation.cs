@@ -1,7 +1,5 @@
 ﻿using FluentValidation;
 
-
-
 namespace Ambulance_API_CQRS.Application.Depart.Command
 {
     public class CreateDepartValidation : AbstractValidator<CreateDepartCommand>
