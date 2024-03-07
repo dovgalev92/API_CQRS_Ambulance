@@ -1,8 +1,6 @@
 ﻿using Ambulance_API_CQRS.Application.Common.Interfaces.IMapp;
 using Ambulance_API_CQRS.Application.Calling.Command.CreateCalling;
 using AutoMapper;
-using System.ComponentModel.DataAnnotations;
-using Ambulance_API_CQRS.Domain.Entities;
 using Ambulance_API_CQRS.Domain.Enums;
 
 namespace Ambulance_API_CQRS.Models.DTO

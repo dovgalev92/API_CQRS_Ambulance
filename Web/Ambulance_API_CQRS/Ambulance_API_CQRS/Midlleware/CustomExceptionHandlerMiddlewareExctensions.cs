@@ -1,5 +1,4 @@
-﻿
-namespace Ambulance_API_CQRS.Midlleware
+﻿namespace Ambulance_API_CQRS.Midlleware
 {
     public static class CustomExceptionHandlerMiddlewareExctensions
     {

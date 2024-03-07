@@ -14,9 +14,9 @@ namespace Ambulance_API_CQRS.Controllers
         private readonly IMapper _mapper;
         private readonly ILoggerManager _logger;
         
-
         public CallingController(IMapper mapper,ILoggerManager logger) => (_mapper,_logger ) = (mapper, logger);
 
+        // api/Calling/5/CreateCalling
         [HttpPost("{id}")]
         [ProducesResponseType(StatusCodes.Status201Created)]
         public async Task<IActionResult> Create(int id, [FromBody] CreateCallingDto dto)

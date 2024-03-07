@@ -10,8 +10,6 @@ using NLog;
 
 
 
-
-
 var builder = WebApplication.CreateBuilder(args);
 
 LogManager.LoadConfiguration(string.Concat(Directory.GetCurrentDirectory(), "/nlog.config"));
@@ -26,15 +24,11 @@ builder.Services.AddAutoMapper(config =>
     config.AddProfile(new AssemblyMappingProfiles(typeof(IApplicationDb).Assembly));
 });
 
-
 builder.Services.AddApplication();
-
-
 builder.Services.AddDbContext<IApplicationDb, ApplicationDbContext>(opt => opt.UseSqlServer(builder.Configuration.GetConnectionString("ConnectSqlServer")));
 //DIServices
 builder.Services.AddRepository();
 builder.Services.ConfigureLoggerServices();
-
 
 var app = builder.Build();
 
@@ -46,6 +40,7 @@ if (app.Environment.IsDevelopment())
 app.UseExceptionHandler(o => { });
 
 app.UseHttpsRedirection();
+app.UseAuthentication();
 
 app.UseAuthorization();
 

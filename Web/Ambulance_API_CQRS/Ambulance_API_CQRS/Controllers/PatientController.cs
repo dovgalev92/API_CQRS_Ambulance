@@ -19,7 +19,7 @@ namespace Ambulance_API_CQRS.Controllers
         private readonly ILoggerManager _logger;
         public PatientController(IMapper mapper, ILoggerManager logger) => (_mapper, _logger) = (mapper, logger);
 
-        // Post patinet
+        // api/Patient/2/patient
         [HttpPost]
         [ProducesResponseType(StatusCodes.Status201Created)]
         public async Task<ActionResult<int>> Create([FromBody] CreatePatientDto create)
@@ -28,9 +28,9 @@ namespace Ambulance_API_CQRS.Controllers
             var map = _mapper.Map<CreatePatientCommand>(create);
             var patientId = await Mediator.Send(map);
 
-            return CreatedAtAction(nameof(GetPatientId), new { id = patientId }, map);
+            return CreatedAtAction(nameof(GetPatientId), new { id = patientId }, create);
         }
-        // Get All or some patient
+        // api/Patient or api/Patient/pageSize=10&pageNumber = 1&name=Sergei&FamilyName=Dovgalev
         [HttpGet]
         [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<IActionResult> GetPatient([FromQuery] PatientParametrDto parametr)
@@ -44,7 +44,7 @@ namespace Ambulance_API_CQRS.Controllers
 
             return Ok(result);
         }
-        // get patient Details
+        // ap/Patient/5
         [HttpGet("{id}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<ActionResult<GetPatientDetailsDto>> GetPatientDetails(int id)
@@ -56,7 +56,6 @@ namespace Ambulance_API_CQRS.Controllers
             };
             _logger.LogInfo("send query GetPatientDetailsQueryHandler");
             return Ok(await Mediator.Send(query));
-
         }
         // Get patient = 5
         [HttpGet("get-patient-id/{id:int}")]

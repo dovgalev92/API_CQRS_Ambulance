@@ -28,6 +28,5 @@ namespace Ambulance_API_CQRS.Models.DTO.DepartDto
 
         public void Mapping(Profile profile)
            => profile.CreateMap<DepartCreateDto, CreateDepartCommand>();
-        
     }
 }

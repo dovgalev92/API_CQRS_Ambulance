@@ -1,0 +1,6 @@
+2024-03-08 00:02:25.4525 INFO depart update process 1
+2024-03-08 00:05:31.5208 INFO depart update process 1
+2024-03-08 00:10:29.9375 INFO depart update process 1
+2024-03-08 01:11:23.3982 INFO depart details process 1
+2024-03-08 01:12:32.7099 INFO starting process date access Depart
+2024-03-08 01:13:16.5503 ERROR Automapper missing type map configuration or unsupported mapping DepartIdQueryHandler

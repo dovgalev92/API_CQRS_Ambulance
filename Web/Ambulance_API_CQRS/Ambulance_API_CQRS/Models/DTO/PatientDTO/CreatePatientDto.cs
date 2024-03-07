@@ -1,6 +1,5 @@
 ﻿using Ambulance_API_CQRS.Application.Common.Interfaces.IMapp;
 using Ambulance_API_CQRS.Application.Patients.Command.CreatePatient;
-using Ambulance_API_CQRS.Domain.Entities;
 using AutoMapper;
 
 namespace Ambulance_API_CQRS.Models.DTO.PatientDTO

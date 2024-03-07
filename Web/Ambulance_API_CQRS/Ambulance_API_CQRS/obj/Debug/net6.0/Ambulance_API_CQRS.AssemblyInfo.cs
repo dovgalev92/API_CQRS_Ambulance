@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Ambulance_API_CQRS")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+26b1ccfb6112ad59e5687bd4300920fceec94f25")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+53b2e7ff91d6bc5cf154aa78abaed4ec5df4cd3e")]
 [assembly: System.Reflection.AssemblyProductAttribute("Ambulance_API_CQRS")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Ambulance_API_CQRS")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
