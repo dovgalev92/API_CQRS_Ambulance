@@ -5,10 +5,6 @@ using Ambulance_API_CQRS.Application.Patients.Queries;
 using Ambulance_API_CQRS.Domain.Entities;
 using Ambulance_API_CQRS.Infrastructure.EfCore;
 using Microsoft.EntityFrameworkCore;
-using System.Linq;
-using System.Linq.Expressions;
-using System.Xml.Linq;
-
 
 namespace Ambulance_API_CQRS.Infrastructure.ImplementationRepository
 {
@@ -20,24 +16,16 @@ namespace Ambulance_API_CQRS.Infrastructure.ImplementationRepository
         {
             _application = application;
         }
-
         public async Task<int> CreatePatient(Patient patient)
         {
             await _application.Patients.AddAsync(patient);
             return patient.Id;
         }
-
         public IQueryable<Patient> FindAll()
         {
             IQueryable<Patient> patients = _application.Patients.AsQueryable().AsNoTracking();
             return patients;
         }
-
-        public async Task<IEnumerable<Patient>> Get(Expression<Func<Patient, bool>> filter)
-        {
-            return await _application.Patients.Where(filter).Include(c => c.CallingAmbulance).ToListAsync();
-        }
-
         public async Task<PagedList<Patient>> GetAllPatients(PatientParametr patientParametr)
         {
             var patient = FindAll();
@@ -53,12 +41,14 @@ namespace Ambulance_API_CQRS.Infrastructure.ImplementationRepository
 
             return await PagedList<Patient>.ToPagedList(sortPatient, patientParametr.PageNumber, patientParametr.PageSize);
         }
-
         public async Task<Patient> GetPatientById(int patientid)
         {
             return await _application.Patients.Include(c => c.CallingAmbulance)
                 .FirstOrDefaultAsync(x => x.Id == patientid);
         }
-
+        public  async Task UpdatePatient(Patient patient)
+        {
+            _application.Patients.Update(patient);
+        }
     }
 }

@@ -21,6 +21,5 @@ namespace Ambulance_API_CQRS.Infrastructure.ImplementationRepository
 
             return create.Id;
         }
-
     }
 }
