@@ -2,10 +2,11 @@
 using Ambulance_API_CQRS.Application.Common.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using System.Reflection;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 namespace Ambulance_API_CQRS.Infrastructure.EfCore
 {
-    public class ApplicationDbContext : DbContext, IApplicationDb
+    public class ApplicationDbContext : IdentityDbContext, IApplicationDb
     {
         public DbSet<Patient> Patients => Set<Patient>();
 
@@ -21,6 +22,7 @@ namespace Ambulance_API_CQRS.Infrastructure.EfCore
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            base.OnModelCreating(modelBuilder);
             modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
         }
     }
