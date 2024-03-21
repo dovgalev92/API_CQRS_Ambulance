@@ -9,3 +9,4 @@ C:\Users\Admin\ProjectFilles\Проект скорой помощи\Domain\Ambul
 C:\Users\Admin\ProjectFilles\Проект скорой помощи\Domain\Ambulance_API_CQRS.Domain\obj\Debug\net6.0\refint\Ambulance_API_CQRS.Domain.dll
 C:\Users\Admin\ProjectFilles\Проект скорой помощи\Domain\Ambulance_API_CQRS.Domain\obj\Debug\net6.0\Ambulance_API_CQRS.Domain.pdb
 C:\Users\Admin\ProjectFilles\Проект скорой помощи\Domain\Ambulance_API_CQRS.Domain\obj\Debug\net6.0\ref\Ambulance_API_CQRS.Domain.dll
+C:\Users\Admin\ProjectFilles\Проект скорой помощи\Domain\Ambulance_API_CQRS.Domain\obj\Debug\net6.0\Ambulance_API_CQRS.Domain.sourcelink.json

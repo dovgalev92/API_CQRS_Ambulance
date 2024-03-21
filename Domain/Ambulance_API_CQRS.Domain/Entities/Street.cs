@@ -22,7 +22,6 @@ namespace Ambulance_API_CQRS.Domain.Entities
         public string? NumberFlat { get; set; } = string.Empty;
 
         // связи
-
         public ICollection<Patient>? Patients { get; set; }
         public Locality? Locality { get; set; }
         public int LocalityId { get; set; }

@@ -1,4 +1,5 @@
 ﻿using Ambulance_API_CQRS.Domain.Entities.Base;
+using Ambulance_API_CQRS.Domain.Enums;
 
 namespace Ambulance_API_CQRS.Domain.Entities
 {
@@ -15,11 +16,15 @@ namespace Ambulance_API_CQRS.Domain.Entities
         /// <summary>
         /// Время вызова
         /// </summary>
-        public TimeSpan TimeCall { get; set; }
+        public TimeSpan? TimeCall { get; set; }
         /// <summary>
         /// Причина вызова
         /// </summary>
         public string CauseCall { get; set; }
+        /// <summary>
+        /// приоритет вызова
+        /// </summary>
+        public Priority? Priority { get; set; }
         /// <summary>
         /// Переадресация вызова в другую организацию 
         /// </summary>
