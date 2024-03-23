@@ -36,14 +36,14 @@ namespace Ambulance_API_CQRS.Infrastructure.ImplementationRepository
                 return await PagedList<Patient>.ToPagedList(patient, patientParametr.PageNumber, patientParametr.PageSize);
             }
 
-            var sortPatient = patient.Where(x => x.FamilyName.Contains(patientParametr.FamilyName)
-            && x.Name.Contains(patientParametr.Name) && x.Patronymic.Contains(patientParametr.Patronymic));
+            var sortPatient = patient.AsNoTracking().Where(x => x.FamilyName.Contains(patientParametr.FamilyName)
+            && x.Name.Contains(patientParametr.Name) && x.Patronymic.Contains(patientParametr.Patronymic)).AsNoTracking();
 
             return await PagedList<Patient>.ToPagedList(sortPatient, patientParametr.PageNumber, patientParametr.PageSize);
         }
         public async Task<Patient> GetPatientById(int patientid)
         {
-            return await _application.Patients.Include(c => c.CallingAmbulance)
+            return await _application.Patients.AsNoTracking().Include(c => c.CallingAmbulance)
                 .FirstOrDefaultAsync(x => x.Id == patientid);
         }
         public  async Task UpdatePatient(Patient patient)

@@ -18,7 +18,7 @@ namespace Ambulance_API_CQRS.Infrastructure.ImplementationRepository
         }
         public async Task<AmbulanceDepart> GetDepartId(int id)
         {
-            var queryId = id > 0 ?  await _application.Departs.SingleOrDefaultAsync(i => i.Id == id)
+            var queryId = id > 0 ?  await _application.Departs.AsNoTracking().SingleOrDefaultAsync(i => i.Id == id)
                 : throw new NotFoundException($"Нет такого вызова{nameof(AmbulanceDepart)}", id);
 
             return new AmbulanceDepart
