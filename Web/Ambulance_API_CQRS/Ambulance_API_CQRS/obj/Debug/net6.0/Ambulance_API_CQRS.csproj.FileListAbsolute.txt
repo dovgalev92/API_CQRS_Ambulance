@@ -84,3 +84,10 @@ C:\Users\Admin\ProjectFilles\Проект скорой помощи\Web\Ambulanc
 C:\Users\Admin\ProjectFilles\Проект скорой помощи\Web\Ambulance_API_CQRS\Ambulance_API_CQRS\bin\Debug\net6.0\nlog.config
 C:\Users\Admin\ProjectFilles\Проект скорой помощи\Web\Ambulance_API_CQRS\Ambulance_API_CQRS\bin\Debug\net6.0\NLog.dll
 C:\Users\Admin\ProjectFilles\Проект скорой помощи\Web\Ambulance_API_CQRS\Ambulance_API_CQRS\bin\Debug\net6.0\NLog.Extensions.Logging.dll
+C:\Users\Admin\ProjectFilles\Проект скорой помощи\Web\Ambulance_API_CQRS\Ambulance_API_CQRS\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Admin\ProjectFilles\Проект скорой помощи\Web\Ambulance_API_CQRS\Ambulance_API_CQRS\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\Admin\ProjectFilles\Проект скорой помощи\Web\Ambulance_API_CQRS\Ambulance_API_CQRS\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\Admin\ProjectFilles\Проект скорой помощи\Web\Ambulance_API_CQRS\Ambulance_API_CQRS\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\Admin\ProjectFilles\Проект скорой помощи\Web\Ambulance_API_CQRS\Ambulance_API_CQRS\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\Admin\ProjectFilles\Проект скорой помощи\Web\Ambulance_API_CQRS\Ambulance_API_CQRS\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\Admin\ProjectFilles\Проект скорой помощи\Web\Ambulance_API_CQRS\Ambulance_API_CQRS\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll

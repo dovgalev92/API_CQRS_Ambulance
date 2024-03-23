@@ -5,11 +5,13 @@ using Ambulance_API_CQRS.Application.Depart.Command;
 using Ambulance_API_CQRS.Application.Common.Interfaces.ILogger;
 using Ambulance_API_CQRS.Application.Depart.Command.EditDepart;
 using Ambulance_API_CQRS.Application.Depart.Query;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Ambulance_API_CQRS.Controllers
 {
     [Route("api/[controller]")]
     [Produces("application/json")]
+    [Authorize]
     public class DepartController : BaseController
     {
         private readonly IMapper _mapper;

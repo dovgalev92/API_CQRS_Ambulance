@@ -1,0 +1,22 @@
+2024-03-23 19:44:50.7442 INFO depart details process 1
+2024-03-23 19:45:07.1093 INFO starting process date access Depart
+2024-03-23 19:45:09.9420 ERROR Automapper missing type map configuration or unsupported mapping DepartIdQueryHandler
+2024-03-23 20:11:28.5838 INFO depart details process 1
+2024-03-23 20:12:01.4418 INFO Started processing get patient details
+2024-03-23 20:12:01.4859 INFO send query GetPatientDetailsQueryHandler
+2024-03-23 20:12:01.6914 INFO Started quering in database for details patient
+2024-03-23 20:17:02.4119 INFO Started processing get patient details
+2024-03-23 20:17:02.4408 INFO send query GetPatientDetailsQueryHandler
+2024-03-23 20:17:02.6636 INFO Started quering in database for details patient
+2024-03-23 20:17:33.9216 INFO Started processing create patient
+2024-03-23 20:18:39.0331 INFO Started processing create patient
+2024-03-23 20:18:41.5894 INFO Patient create
+2024-03-23 20:24:22.7692 INFO Started processing get patient details
+2024-03-23 20:24:22.8148 INFO send query GetPatientDetailsQueryHandler
+2024-03-23 20:24:23.0482 INFO Started quering in database for details patient
+2024-03-23 20:33:35.8458 INFO call creation process CallingController
+2024-03-23 20:33:39.2748 INFO SaveChanges createCalling
+2024-03-23 20:34:22.2167 INFO depart details process 1
+2024-03-23 20:34:22.2256 INFO starting process date access Depart
+2024-03-23 20:52:28.0079 INFO Started processing get patient
+2024-03-23 20:52:32.6313 INFO Started quering in database for get AllPatient

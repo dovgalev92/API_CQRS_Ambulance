@@ -7,6 +7,7 @@ using Ambulance_API_CQRS.Application.Common.Interfaces.IMapp;
 using Ambulance_API_CQRS.Application;
 using Ambulance_API_CQRS.DIServices;
 using NLog;
+using Ambulance_API_CQRS.ServieseAuth;
 
 
 
@@ -14,10 +15,13 @@ var builder = WebApplication.CreateBuilder(args);
 
 LogManager.LoadConfiguration(string.Concat(Directory.GetCurrentDirectory(), "/nlog.config"));
 
+
 builder.Services.AddControllers();
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+
 builder.Services.AddAutoMapper(config =>
 {
     config.AddProfile(new AssemblyMappingProfiles(Assembly.GetExecutingAssembly()));
@@ -26,6 +30,11 @@ builder.Services.AddAutoMapper(config =>
 
 builder.Services.AddApplication();
 builder.Services.AddDbContext<IApplicationDb, ApplicationDbContext>(opt => opt.UseSqlServer(builder.Configuration.GetConnectionString("ConnectSqlServer")));
+builder.Services.ConfigureIdentity();
+builder.Services.ConfigureJWT(builder.Configuration);
+builder.Services.AddAuthorization();
+
+
 //DIServices
 builder.Services.AddRepository();
 builder.Services.ConfigureLoggerServices();
@@ -41,7 +50,6 @@ app.UseExceptionHandler(o => { });
 
 app.UseHttpsRedirection();
 app.UseAuthentication();
-
 app.UseAuthorization();
 
 app.MapControllers();

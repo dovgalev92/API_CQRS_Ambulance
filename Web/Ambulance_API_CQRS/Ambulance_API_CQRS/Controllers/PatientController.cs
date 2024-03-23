@@ -6,13 +6,14 @@ using Ambulance_API_CQRS.Application.Patients.Queries.GetPatientDetails;
 using Ambulance_API_CQRS.Application.Patients.Queries.GetPatientId;
 using Ambulance_API_CQRS.Models.DTO.PatientDTO;
 using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-
 
 namespace Ambulance_API_CQRS.Controllers
 {
     [Route("api/[controller]")]
     [Produces("application/json")]
+    [Authorize]
     public class PatientController : BaseController
     {
         private readonly IMapper _mapper;
